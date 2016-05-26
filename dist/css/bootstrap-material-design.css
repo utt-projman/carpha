@@ -2239,7 +2239,7 @@ legend {
   float: right;
 }
 .navbar {
-  background-color: #009688;
+  background-color: #457E29;
   border: 0;
   border-radius: 0;
 }
@@ -2384,7 +2384,7 @@ fieldset[disabled] .navbar .btn-link:focus {
 }
 .navbar,
 .navbar.navbar-default {
-  background-color: #009688;
+  background-color: #457E29;
   color: rgba(255,255,255, 0.84);
 }
 .navbar .navbar-form .form-group input.form-control::-moz-placeholder,
@@ -2654,7 +2654,7 @@ fieldset[disabled] .navbar .btn-link:focus {
 @media (max-width: 1199px) {
   .navbar .navbar-brand {
     height: 50px;
-    padding: 10px 15px;
+    padding: 10px 11px;
   }
   .navbar .navbar-form {
     margin-top: 10px;
@@ -3424,3 +3424,20 @@ hr.on-light {
   color: #757575;
 }
 /*# sourceMappingURL=bootstrap-material-design.css.map */
+footer {
+padding:20px 0;
+margin-top:25px;
+border-top:5px solid #457E29;
+background:#6DB43F;
+}
+footer a {
+color:#FFF;
+}
+footer a:hover {
+color:#e1ffe0;
+}
+.foot-logo {
+float:right;
+margin:0 0 10px 10px;
+height:40px;
+}
