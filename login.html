@@ -69,7 +69,14 @@
 	  <li><a href='/carpha'>Home</a></li>
 	  <li class="active">Sign in</li>
 	</ol>
-	<h1>SIGN IN CODE HERE</h1>
+	<div class='login'>
+	<h1>Login</h1>
+	<form name='loginForm' onsubmit='return validateLogin()' method='post'>  
+	<label>Email</label><input type="email" name='email'/><br />
+	<label>Password</label><input type="password" name='password'/><br />
+	<input type='submit' name='Login'/>
+	</form>
+	 <div class="forget"><a href="#">Forgot your password?</a></div>
 	</div>
 </div>
 
@@ -164,6 +171,21 @@
       $("#source-modal").modal();
     });
   });
+  
+  //null check for login
+  function validateLogin() {
+    var x = document.forms["loginForm"]["email"].value;
+    if (x == null || x == "") {
+        alert("Please enter an email address.");
+        return false;
+    }
+	var x = document.forms["loginForm"]["password"].value;
+    if (x == null || x == "") {
+        alert("Please enter a password.");
+        return false;
+    }
+}
+  
 </script>
 
 <!-- Twitter Bootstrap -->
@@ -184,3 +206,4 @@
 
 </body>
 </html>
+
