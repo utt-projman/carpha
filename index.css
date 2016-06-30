@@ -249,7 +249,7 @@
 }
 
 .avatar {text-align:center; cursor:pointer; background:url("image/upload.png") no-repeat; width:185px; height:149px}
-p.sm {text-align:center; font-size:.8em; display:block}
+p.sm {text-align:center; font-size:.8em; display:block; margin-top:15px;}
 .avatar .thumb:hover span {display:block}
 .user-type {text-align:center; margin:15px 0; color:#457e29; font-size:1.1em;}
 dl {margin-top:5px}
