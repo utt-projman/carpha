@@ -248,6 +248,12 @@
     user-select: none;
 }
 
+.avatar {text-align:center;}
+.user-type {text-align:center; margin:15px 0; color:#457e29; font-size:1.1em;}
+dl {margin-top:5px}
+dd, dt {font-size:.8em; color:#808080; display:inline-block}
+dt {padding-right:5px;}
+hr.sep {border-bottom:1px solid #c4c4c4}
 /*#radio-button h2 {*/
     /*font-size: 18.7199993133545px;*/
     /*font-weight: bold;*/
