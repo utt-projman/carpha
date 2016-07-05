@@ -290,7 +290,12 @@ hr.sep {border-bottom:1px solid #c4c4c4}
 #slider .sample2 {
     height: 150px;
 }
-
+.prop-home {list-style-type:none; padding-left:0}
+.prop-home li a{display:block; font-size:.9em; padding:3px 0;}
+.prop-home li a .glyphicon {margin-right:5px;}
+.prop-home .rejected {color:#297e2c}
+.prop-home .accepted {color:#bf311a}
+.prop-home .awaiting {color:#808080}
 /*#slider .sample2 .slider {*/
     /*margin: 0 40px;*/
 /*}*/

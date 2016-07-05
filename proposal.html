@@ -69,48 +69,56 @@
 	  <li><a href='/carpha'>Home</a></li>
 	  <li class="active">Submit a Proposal</li>
 	</ol>
-    <div class='row'>
-		<div class="form-group label-floating col-sm-6">
-	<div class="form-group label-floating">
-		<label for="i5" class="control-label">Study Title</label>
-		<input type="text" class="form-control" id="i5">
-		<span class="help-block">Enter your email here</span>
-	</div>
+	
+	
+	<link rel='stylesheet' href='scripts/bxslider/jquery.bxslider.css' />
+<div class='col-md-9'>
+<ul class="bxslider">
+  <li class='container'>
+  <h2>Proposal Info</h2>
+	<div class='row'>
+		<div class="form-group label-floating col-md-6">
+			<div class="form-group label-floating">
+				<label for="i5" class="control-label">Study Title</label>
+				<input type="text" class="form-control" id="i5">
+				<span class="help-block">Enter your Study Title here</span>
+			</div>
+		</div>
+		<div class="form-group label-floating col-md-6">
+			<div class="form-group label-floating">
+				<label for="i5" class="control-label">REC Meeting Date</label>
+				<input type="date" class="form-control" id="i5">
+				<span class="help-block">Enter your email here</span>
+			</div>
+			<div class="form-group label-floating">
+				<label for="i5" class="control-label">Comments Date</label>
+				<input type="date" class="form-control" id="i5">
+				<span class="help-block">Enter your email here</span>
+			</div>
+		</div>
 	</div>
 	<div class="form-group label-floating col-sm-6">
-	<div class="form-group label-floating">
-		<label for="i5" class="control-label">REC Meeting Date</label>
-		<input type="date" class="form-control" id="i5">
-		<span class="help-block">Enter your email here</span>
+		<label for="i5" class="control-label">Investigator</label>
+		<input type="text" class="form-control" id="i5">
+		<span class="help-block">Enter your Name here</span>
 	</div>
-	<div class="form-group label-floating">
-		<label for="i5" class="control-label">Comments Date</label>
-		<input type="date" class="form-control" id="i5">
-		<span class="help-block">Enter your email here</span>
+	<div class="form-group label-floating col-sm-6">
+		<label for="i5" class="control-label">Response Due</label>
+		<input type="text" class="form-control" id="i5">
+		<span class="help-block">Enter your Response here</span>
 	</div>
-	</div>
-	</div>
-		<div class="form-group label-floating col-sm-6">
-			<label for="i5" class="control-label">Investigator</label>
-			<input type="text" class="form-control" id="i5">
-			<span class="help-block">Enter your Name here</span>
-		</div>
-		<div class="form-group label-floating col-sm-6">
-			<label for="i5" class="control-label">Response Due</label>
-			<input type="text" class="form-control" id="i5">
-			<span class="help-block">Enter your Response here</span>
-		</div>
-		<div class="form-group"> 
-                  <div class="checkbox">
-                    <label>
-					Vulnerable Group</label><br/>
-					<div class="row">
-						<div class="form-group label-floating col-sm-4">
+  </li>
+  <li class='container'>
+	<div class="form-group"> 
+        <div class="checkbox">
+            <label>Vulnerable Group</label><br/>
+				<div class="row">
+					<div class="form-group label-floating col-sm-4">
 						<label>
 						  <input type="checkbox"><span class="checkbox-material"><span class="check"></span></span> None
 						</label>					
-						</div>
-						<div class="form-group label-floating col-sm-4">
+					</div>
+					<div class="form-group label-floating col-sm-4">
 						<label>
 						  <input type="checkbox"><span class="checkbox-material"><span class="check"></span></span> Physical Incapacity
 						</label>					</div>
@@ -122,14 +130,15 @@
 					</div>
 					<div class="row">
 						<div class="form-group label-floating col-sm-4">
-						<label>
-						  <input type="checkbox"><span class="checkbox-material"><span class="check"></span></span> Pregnant
-						</label>					
+							<label>
+							  <input type="checkbox"><span class="checkbox-material"><span class="check"></span></span> Pregnant
+							</label>					
 						</div>
 						<div class="form-group label-floating col-sm-4">
-						<label>
-						  <input type="checkbox"><span class="checkbox-material"><span class="check"></span></span> Children
-						</label>					</div>
+							<label>
+							  <input type="checkbox"><span class="checkbox-material"><span class="check"></span></span> Children
+							</label>					
+						</div>
 						<div class="form-group label-floating col-sm-4">
 							<label>
 							  <input type="checkbox"><span class="checkbox-material"><span class="check"></span></span> Prisoners
@@ -138,14 +147,15 @@
 					</div>
 					<div class="row">
 						<div class="form-group label-floating col-sm-4">
-						<label>
-						  <input type="checkbox"><span class="checkbox-material"><span class="check"></span></span> Elderly
-						</label>					
+							<label>
+							  <input type="checkbox"><span class="checkbox-material"><span class="check"></span></span> Elderly
+							</label>					
 						</div>
 						<div class="form-group label-floating col-sm-4">
-						<label>
-						  <input type="checkbox"><span class="checkbox-material"><span class="check"></span></span> Institutionalised
-						</label>					</div>
+							<label>
+							  <input type="checkbox"><span class="checkbox-material"><span class="check"></span></span> Institutionalised
+							</label>					
+						</div>
 						<div class="form-group label-floating col-sm-4">
 							<label>
 							  <input type="checkbox"><span class="checkbox-material"><span class="check"></span></span> Language
@@ -157,91 +167,109 @@
 							  <input type="checkbox"><span class="checkbox-material"><span class="check"></span></span> Other
 						</label>
 					</div>
-                  </div>
-                </div>
-		<div class="form-group is-empty">
-                <label for="inputEmail" class="col-md-2 control-label">Objective(s)</label>
-                <div class="col-md-10">
-                  <input type="text" class="form-control" id="inputEmail">
-                </div>
         </div>
-		<div class="form-group is-empty">
-                <label for="inputEmail" class="col-md-2 control-label">Scientific Justification</label>
-                <div class="col-md-10">
-                  <input type="text" class="form-control" id="inputEmail">
-                </div>
+    </div>
+  </li>
+  <li class='container'>
+	<div class="form-group is-empty">
+        <label for="inputEmail" class="col-md-2 control-label">Objective(s)</label>
+        <div class="col-md-10">
+            <input type="text" class="form-control" id="inputEmail">
         </div>
-		<div class="form-group is-empty">
-                <label for="inputEmail" class="col-md-2 control-label">Design/Methodology</label>
-                <div class="col-md-10">
-                  <input type="text" class="form-control" id="inputEmail">
-                </div>
-        </div>  
-		<div class="form-group is-empty">
-                <label for="inputEmail" class="col-md-2 control-label">Statistical Considerations</label>
-                <div class="col-md-10">
-                  <input type="text" class="form-control" id="inputEmail">
-                </div>
-        </div>	  
-		<div class="form-group is-empty">
-                <label for="inputEmail" class="col-md-2 control-label">Study Population</label>
-                <div class="col-md-10">
-                  <input type="text" class="form-control" id="inputEmail">
-                </div>
-        </div>
-		<div class="form-group is-empty">
-                <label for="inputEmail" class="col-md-2 control-label">Research Tool/Intervention</label>
-                <div class="col-md-10">
-                  <input type="text" class="form-control" id="inputEmail">
-                </div>
-        </div>	
-		<div class="form-group is-empty">
-                <label for="inputEmail" class="col-md-2 control-label">Informed Consent</label>
-                <div class="col-md-10">
-                  <input type="text" class="form-control" id="inputEmail">
-                </div>
-        </div>	
-		<div class="form-group is-empty">
-                <label for="inputEmail" class="col-md-2 control-label">Data Privacy/Confidentiality</label>
-                <div class="col-md-10">
-                  <input type="text" class="form-control" id="inputEmail">
-                </div>
-        </div>	
-		<div class="form-group is-empty">
-                <label for="inputEmail" class="col-md-2 control-label">Conflict of Interest</label>
-                <div class="col-md-10">
-                  <input type="text" class="form-control" id="inputEmail">
-                </div>
-        </div>	
-<div class="form-group is-empty">
-                <label for="inputEmail" class="col-md-2 control-label">Publication Plan</label>
-                <div class="col-md-10">
-                  <input type="text" class="form-control" id="inputEmail">
-                </div>
-        </div>	
-		<div class="form-group is-empty">
-                <label for="inputEmail" class="col-md-2 control-label">Additional Comments</label>
-                <div class="col-md-10">
-                  <input type="text" class="form-control" id="inputEmail">
-                </div>
-        </div>	
-<div class="form-group is-empty">
-                <label for="textArea" class="col-md-2 control-label">Chair Summary</label>
-
-                <div class="col-md-10">
-                  <textarea class="form-control" rows="3" id="textArea"></textarea>
-                </div>
-              </div>
-<div class="form-group is-empty">
-                <label for="textArea" class="col-md-2 control-label">Feedback to Investigator</label>
-
-                <div class="col-md-10">
-                  <textarea class="form-control" rows="3" id="textArea"></textarea>
-                </div>
-              </div>			  
+    </div>
+	<div class="form-group is-empty">
+		<label for="inputEmail" class="col-md-2 control-label">Scientific Justification</label>
+		<div class="col-md-10">
+		  <input type="text" class="form-control" id="inputEmail">
+		</div>
+    </div>
+	<div class="form-group is-empty">
+		<label for="inputEmail" class="col-md-2 control-label">Design/Methodology</label>
+		<div class="col-md-10">
+		  <input type="text" class="form-control" id="inputEmail">
+		</div>
+	</div>  
+	<div class="form-group is-empty">
+		<label for="inputEmail" class="col-md-2 control-label">Statistical Considerations</label>
+		<div class="col-md-10">
+		  <input type="text" class="form-control" id="inputEmail">
+		</div>
+	</div>	  
+	<div class="form-group is-empty">
+		<label for="inputEmail" class="col-md-2 control-label">Study Population</label>
+		<div class="col-md-10">
+		  <input type="text" class="form-control" id="inputEmail">
+		</div>
 	</div>
+	<div class="form-group is-empty">
+		<label for="inputEmail" class="col-md-2 control-label">Research Tool/Intervention</label>
+		<div class="col-md-10">
+		  <input type="text" class="form-control" id="inputEmail">
+		</div>
+	</div>	
+	<div class="form-group is-empty">
+		<label for="inputEmail" class="col-md-2 control-label">Informed Consent</label>
+		<div class="col-md-10">
+		  <input type="text" class="form-control" id="inputEmail">
+		</div>
+	</div>	
+	<div class="form-group is-empty">
+		<label for="inputEmail" class="col-md-2 control-label">Data Privacy/Confidentiality</label>
+		<div class="col-md-10">
+		  <input type="text" class="form-control" id="inputEmail">
+		</div>
+	</div>	
+	<div class="form-group is-empty">
+		<label for="inputEmail" class="col-md-2 control-label">Conflict of Interest</label>
+		<div class="col-md-10">
+		  <input type="text" class="form-control" id="inputEmail">
+		</div>
+	</div>	
+	<div class="form-group is-empty">
+		<label for="inputEmail" class="col-md-2 control-label">Publication Plan</label>
+		<div class="col-md-10">
+		  <input type="text" class="form-control" id="inputEmail">
+		</div>
+    </div>	
+	<div class="form-group is-empty">
+		<label for="inputEmail" class="col-md-2 control-label">Additional Comments</label>
+		<div class="col-md-10">
+		  <input type="text" class="form-control" id="inputEmail">
+		</div>
+	</div>	
+	<div class="form-group is-empty">
+		<label for="textArea" class="col-md-2 control-label">Chair Summary</label>
+		<div class="col-md-10">
+		  <textarea class="form-control" rows="3" id="textArea"></textarea>
+		</div>
 	</div>
+	<div class="form-group is-empty">
+        <label for="textArea" class="col-md-2 control-label">Feedback to Investigator</label>
+			<div class="col-md-10">
+			  <textarea class="form-control" rows="3" id="textArea"></textarea>
+			</div>
+	</div>			  
+  </li>
+</ul>
 </div>
+<div id="bx-pager">
+  <a data-slide-index="0" href="">cvbcvbcvb</a><br/>
+  <a data-slide-index="1" href="">srtedr4</a><br/>
+  <a data-slide-index="2" href="">5555</a>
+</div>
+	
+	<script src="scripts/bxslider/jquery.bxslider.js"></script>
+<script type='text/javascript'>$(document).ready(function(){
+  $('.bxslider').bxSlider({
+  pagerCustom: '#bx-pager',
+  nextSelector: '.hide',
+  prevSelector: '.hide'
+});
+});
+</script>
+		  
+	</div>
+	</div>
 
 <footer class='row'>
 	<div class='container'>

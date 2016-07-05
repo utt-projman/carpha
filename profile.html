@@ -128,12 +128,12 @@
 			<h4>Contact Info</h4>
 			<div class='row'>
 				<div class="form-group label-floating col-md-6">
-					<label for="i5" class="control-label">Primary</label>
+					<label for="i5" class="control-label">Primary Phone</label>
 					<input type="text" class="form-control" id="i5" value='555-1234'>
 					<span class="help-block">Enter your password here</span>
 				</div>
 				<div class="form-group label-floating col-md-6">
-					<label for="i5" class="control-label">Secondary</label>
+					<label for="i5" class="control-label">Secondary Phone</label>
 					<input type="textS" class="form-control" id="i5">
 					<span class="help-block">Enter your password here</span>
 				</div>
@@ -143,6 +143,35 @@
                 <label for="t1" class="control-label">Address</label>
                 <textarea id="t1" class="form-control"></textarea>
               </div>
+			</div>
+			<h2>Institution</h2>
+			<div class="row">
+				<div class="form-group label-floating col-md-5">
+					<label for="select111" class="control-label">Select your Institution</label>
+					  <select id="select111" class="form-control" onchange="changeInstit(this)">
+						<option></option>
+						<option value="1">SAM</option>
+						<option value="2">UWI</option>
+						<option value="3">UTT</option>
+						<option value="4">CTSCBCS</option>
+					  </select>
+				  </div>
+				  <div class="col-md-5 col-md-offset-2">
+					<img id='inst-image' src='http://placehold.it/100x90' />
+				  </div>
+			  </div>
+			  <div class="row">
+				<div class="form-group label-floating col-md-6">
+                <label for="t1" class="control-label">Address</label>
+                <textarea id="inst-address" class="form-control"></textarea>
+              </div>
+			</div>
+			<div class='row'>
+				<div class="form-group label-floating col-md-6">
+					<label for="i5" class="control-label">Phone</label>
+					<input type="text" class="form-control" id="inst-phone" value=''>
+					<span class="help-block">Enter your Institution's Phone Number here</span>
+				</div>
 			</div>
 		<button href="javascript:void(0)" class="btn btn-raised btn-primary">Save</button>
 		</form>
@@ -244,6 +273,42 @@
       $("#source-modal").modal();
     });
   });
+  
+  function changeInstit(el)
+  {
+    var instData=
+	[
+		{
+		"phone":"664-6681",
+		"address":"#1,3 & 6 Mc Carthy Street, St. Augustine, Trinidad W.I.",
+		"image":"image/institutions/samtt.png"
+		},
+		{
+		"phone":"662-2002",
+		"address":"The University of the West Indies St. Augustine, Trinidad and Tobago",
+		"image":"image/institutions/uwi.png"
+		},
+		{
+		"phone":"642-8888 Ext. 21125",
+		"address":"John Donaldson Campus Wrightson Road, Port of Spain",
+		"image":"image/institutions/utt.png"
+		},
+		{
+		"phone":"671-2551/2872",
+		"address":"#120 Montrose Main Road, Chaguanas, Trinidad, West Indies",
+		"image":"image/institutions/cts.png"
+		},
+	];
+	console.log(instData);
+	addr_el=document.getElementById("inst-address")
+	addr_el.value=instData[(el.value-1)].address;
+	addr_el.parentNode.className=addr_el.parentNode.className.replace(/\sis-empty/,'');
+	phone_el=document.getElementById("inst-phone")
+	phone_el.value=instData[(el.value-1)].phone;
+	phone_el.parentNode.className=phone_el.parentNode.className.replace(/\sis-empty/,'');
+	image_el=document.getElementById("inst-image");
+	image_el.setAttribute("src", instData[(el.value-1)].image);
+  }
 </script>
 
 <!-- Twitter Bootstrap -->
