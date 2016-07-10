@@ -296,6 +296,20 @@ hr.sep {border-bottom:1px solid #c4c4c4}
 .prop-home .rejected {color:#297e2c}
 .prop-home .accepted {color:#bf311a}
 .prop-home .awaiting {color:#808080}
+.left {float:left;}
+.right {float:right;}
+.clear {clear:both}
+.prop-status{float:right; margin-right:25px;}
+.btn-success .glyphicon {margin-left:5px;}
+.in-block {display:inline-block}
+.inv {visibility:hidden;}
+#bx-pager .active .inv {display:inline-block; visibility:visible;}
+#bx-pager ul {list-style-type:none}
+#bx-pager li {margin-bottom:1px}
+#bx-pager a {display:block; padding:10px; font-size:1.1em; background:#E1E1E1;}
+.left-icon {display:inline-block; margin-right:5px}
+#bx-pager a.active, #bx-pager a:hover.active {background:#FFF}
+#bx-pager a:hover {background:#F2F2F2; text-decoration:none}
 /*#slider .sample2 .slider {*/
     /*margin: 0 40px;*/
 /*}*/
