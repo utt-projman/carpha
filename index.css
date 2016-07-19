@@ -313,17 +313,48 @@ hr.sep {border-bottom:1px solid #c4c4c4}
 #pager_step5 a {background:#347da9; text-align:center; letter-spacing:.3em; font-weight:bold; font-size:1.3em; color:#FFF;}
 #pager_step5 a:hover {background:#4093c5}
 #pager_step5 a.active, #pager_step5 a:hover.active {color:#347da9; background:#FFF}
-.proposal-table {width:100%; margin-bottom:15px;}
-.proposal-table thead tr {background:#6DB43F}
-.proposal-table thead th {border:none; color:#FFF}
-.proposal-table td, .proposal-table th { border:1px solid #c3c3c3;padding:8px}
-.proposal-table tr:nth-child(even){background:#F2F2F2}
-.proposal-table tfoot td {text-align:right; padding:20px 0 0; border:none}
-.proposal-table tfoot td a {border:1px solid #c3c3c3; padding:10px; margin-left:10px; background:#FFF; text-decoration:none}
-.proposal-table tfoot td a:hover {background:#ecfbec}
-.search-box{margin-bottom:15px; float:right}
+.proposal-table, .review-table {width:100%; margin-bottom:15px;}
+.proposal-table thead tr, .review-table thead tr {background:#6DB43F}
+.proposal-table thead th, .review-table thead th {border:none; color:#FFF}
+.proposal-table td, .review-table td, .proposal-table th, .review-table th { border:1px solid #c3c3c3;padding:8px}
+.proposal-table tr:nth-child(even), .review-table tr:nth-child(even){background:#F2F2F2}
+.proposal-table tfoot td, .review-table tfoot td {text-align:right; padding:20px 0 0; border:none}
+.proposal-table tfoot td a, .review-table tfoot td a {border:1px solid #c3c3c3; padding:10px; margin-left:10px; background:#FFF; text-decoration:none}
+.proposal-table tfoot td a:hover, .review-table tfoot td a:hover {background:#ecfbec}
+
+.review-table thead tr{
+    background: #347da9;
+
+}
+.review-table th, .review-table a{
+    color: #347da9;
+} 
+.search-box, .deadline-box{margin-bottom:15px; float:right}
 .search-box input {width:250px; border:1px solid #c3c3c3; display:inline-block; padding:5px 0; text-indent:10px}
 .search-box .srch {width:inherit; border:none; position:relative; color:#FFF; background:#457E29; top:2px; padding:9px 10px 10px; display:inline-block}
+.search-box .blue{
+    background: #347da9;
+}
+.deadline-box{
+float:left;
+}
+
+#btn-edit-deadline, #btn-cancel-deadline, #btn-save-deadline{
+border:none; 
+background: none;
+color: #347da9;
+display: none;
+}
+#btn-edit-deadline{
+    display: inline;
+}
+#btn-cancel-deadline{
+color: red;
+}
+
+#btn-save-deadline{
+color: green;
+}
 /*#slider .sample2 .slider {*/
     /*margin: 0 40px;*/
 /*}*/
