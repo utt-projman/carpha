@@ -322,6 +322,49 @@ hr.sep {border-bottom:1px solid #c4c4c4}
 .proposal-table tfoot td a, .review-table tfoot td a {border:1px solid #c3c3c3; padding:10px; margin-left:10px; background:#FFF; text-decoration:none}
 .proposal-table tfoot td a:hover, .review-table tfoot td a:hover {background:#ecfbec}
 
+.overlay > tr {
+    background: none !important; 
+    
+}
+
+.overlay > tr td{
+    /*border:5px solid #746a6a;*/
+    background: #e1e1e1;
+    opacity: 0.4;
+    border: none;
+
+}
+
+.spotlight{
+    box-shadow: 0 10px 6px -6px #777;
+    background: #fff !important;
+    opacity: 1 !important;
+}
+.spotlight div{
+    margin-top: 20px;
+    height: 40px;
+
+    display: block;
+}
+
+.spotlight div button{
+    width: 45%;
+    display: inline !important;
+    height: 100%;
+}
+
+.spotlight div .btn-save:hover{
+    color: white !important;
+    background: green !important;
+}
+
+.spotlight div .btn-cancel:hover{
+    color: white !important;
+    background: red !important;
+}
+.edit-role{
+    display: none;
+}
 .review-table thead tr{
     background: #347da9;
 
@@ -339,7 +382,7 @@ hr.sep {border-bottom:1px solid #c4c4c4}
 float:left;
 }
 
-#btn-edit-deadline, #btn-cancel-deadline, #btn-save-deadline{
+.btn-save, .btn-cancel, #btn-edit-deadline, #btn-cancel-deadline, #btn-save-deadline{
 border:none; 
 background: none;
 color: #347da9;
@@ -348,11 +391,11 @@ display: none;
 #btn-edit-deadline{
     display: inline;
 }
-#btn-cancel-deadline{
+.btn-cancel, #btn-cancel-deadline{
 color: red;
 }
 
-#btn-save-deadline{
+.btn-save, #btn-save-deadline{
 color: green;
 }
 /*#slider .sample2 .slider {*/
