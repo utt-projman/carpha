@@ -194,6 +194,7 @@
 
     $(".btn-edit").click(function(e) {
         e.preventDefault()
+        $(".btn-edit").hide()
         $("tbody").addClass("overlay")
         var roleTag = $(this).parent().siblings()[3]
         $(roleTag).addClass("spotlight ");
@@ -216,7 +217,7 @@
 
     $(".btn-save").click(function(e) {
         e.preventDefault();
-  
+
         var roleTag = $(this).parent().parent()
         
         selectedCurrentRole = null
@@ -237,6 +238,7 @@
         $(roleTag).removeClass("spotlight")
         $(roleTag).find("select").replaceWith("<span>"+selectedCurrentRole+"</span>")
         selectedCurrentRole = null
+        $(".btn-edit").fadeIn()
     });
 
     $(".menu li").click(function() {
