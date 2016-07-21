@@ -313,6 +313,7 @@ hr.sep {border-bottom:1px solid #c4c4c4; margin-bottom:0}
 #pager_step5 a {background:#347da9; text-align:center; letter-spacing:.3em; font-weight:bold; font-size:1.3em; color:#FFF;}
 #pager_step5 a:hover {background:#4093c5}
 #pager_step5 a.active, #pager_step5 a:hover.active {color:#347da9; background:#FFF}
+<<<<<<< HEAD
 .proposal-table, .participant-table, .site-table {width:100%; margin-bottom:15px;}
 .proposal-table thead tr, .participant-table thead tr, .site-table thead tr {background:#6DB43F}
 .proposal-table thead th, .participant-table thead th, .site-table thead th {border:none; color:#FFF}
@@ -331,7 +332,7 @@ hr.sep {border-bottom:1px solid #c4c4c4; margin-bottom:0}
 .btn-col {width:35px}
 .add_field_button, .remove_field {padding:0; margin:0;}
 table .form-group input.form-control, table .form-group {margin:0; padding:0}
-
+=======
 .proposal-table, .review-table {width:100%; margin-bottom:15px;}
 .proposal-table thead tr, .review-table thead tr {background:#6DB43F}
 .proposal-table thead th, .review-table thead th {border:none; color:#FFF}
@@ -417,7 +418,7 @@ color: red;
 .btn-save, #btn-save-deadline{
 color: green;
 }
-
+<<<<<<< HEAD
 
 #glossary{
         -webkit-columns:  3; /* Chrome, Safari, Opera */
@@ -441,18 +442,81 @@ color: green;
 font-weight: bold;
     
 }
+=======
+>>>>>>> origin/master
+>>>>>>> cd49d281199cb866dc568767f8b5bc3dccc12eec
+/*#slider .sample2 .slider {*/
+    /*margin: 0 40px;*/
+/*}*/
 
-#float-add-glossary{
-    position: fixed;
-    right: 2%;
-    bottom: 50%;
-}
+/*#slider h2 {*/
+/*padding: 14px;*/
+/*margin: 0;*/
+/*font-size: 16px;*/
+/*font-weight: 400;*/
+/*}*/
 
-.fl{
-    float: left;
-}
-#float-add-institute{
-    margin-top: 2%;
-    margin-left: 3%;
-    float: left;
-}
+/*#slider .slider {*/
+    /*margin: 15px;*/
+/*}*/
+
+/*#button h2 {*/
+/*padding: 14px;*/
+/*margin: 0;*/
+/*font-size: 16px;*/
+/*font-weight: 400;*/
+/*}*/
+
+/*#floating-action-button .btn {*/
+    /*margin: 20px;*/
+/*}*/
+
+/*#floating-action-button h2 {*/
+/*padding: 14px;*/
+/*margin: 0;*/
+/*font-size: 16px;*/
+/*font-weight: 400;*/
+/*}*/
+
+/*#dropdown h2 {*/
+/*padding: 14px;*/
+/*margin: 0;*/
+/*font-size: 16px;*/
+/*font-weight: 400;*/
+/*}*/
+
+/*#dropdown .dropdown {*/
+    /*font-size: 30px;*/
+    /*padding: 20px;*/
+/*}*/
+
+/*#dropdown-menu h2 {*/
+/*padding: 14px;*/
+/*margin: 0;*/
+/*font-size: 16px;*/
+/*font-weight: 400;*/
+/*}*/
+
+/*#dropdown-menu .sample {*/
+    /*width: 200px;*/
+/*}*/
+
+/*#dropdown-menu .form-group {*/
+    /*margin: 30px 0;*/
+/*}*/
+
+/*#toggle-button h2 {*/
+    /*font-size: 18.7199993133545px;*/
+    /*font-weight: bold;*/
+    /*margin-bottom: 30px;*/
+    /*margin-top: 50px;*/
+/*}*/
+
+/*#toggle-button .togglebutton label {*/
+    /*margin: 20px 10px;*/
+    /*width: 200px;*/
+/*}*/
+
+/*#toggle-button .togglebutton .toggle {*/
+    /*float: right;*/
+/*}*/
