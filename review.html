@@ -78,95 +78,59 @@
   <h2 class='left'>Step 1</h2><div class='prop-status' id='prop-status1'><a href="javascript:void(0)" style='display:none' class="step-status right btn btn-raised btn-success">Completed<span class='glyphicon glyphicon-ok'></span></a></div>
 	<hr class='clear' />
   <div class='row'>
-		<div class="form-group label-floating col-md-11">
+		<div class="form-group label-floating col-md-12">
 			<div class="form-group label-floating">
-				<label for="txt_study_title" class="control-label">Study Title *</label>
+				<label for="i5" class="control-label">Study Title</label>
 				<input type="text" class="form-control" name="txt_study_title" id="txt_study_title">
 				<span class="help-block">Enter your Study Title here</span>
 			</div>
 		</div>
 		</div>
-		<div class='row'>
-			<div class="form-group label-floating is-empty  col-md-11">
-                <label for="txt_hypothesis" class="control-label">Hypothesis</label>
-                <textarea id="txt_hypothesis" name="txt_hypothesis" class="form-control"></textarea>
-              </div>
-		</div>
-		<div class='row'>
-
-		<div class="form-group label-floating is-empty  col-md-11">
-                <label for="txt_significance" class="control-label">Usefulness and Significance</label>
-                <textarea id="txt_significance" name="txt_significance" class="form-control"></textarea>
-              </div>
-		</div>
-		<div class='row'>
-
-		<div class="form-group label-floating is-empty  col-md-11">
-                <label for="txt_study_design" class="control-label">Outline of Study Design</label>
-                <textarea id="txt_study_design" name="txt_study_design" class="form-control"></textarea>
-              </div>
-		</div>
-		<div class='row'>
-
-		<div class="form-group label-floating is-empty  col-md-11">
-                <label for="txt_confident" class="control-label">Steps to Maintain Confidentiality</label>
-                <textarea id="txt_confident" name="txt_confident" class="form-control"></textarea>
-              </div>
-		</div>
-		<div class='row'>
-
-		<div class="form-group label-floating is-empty  col-md-11">
-                <label for="txt_benefits" class="control-label">Benefits to Participants</label>
-                <textarea id="txt_benefits" name="txt_benefits" class="form-control"></textarea>
-              </div>
-		</div>
-		
-		
+		<div class="row">
+	<div class="form-group is-empty is-fileinput col-md-7">
+            <input type="file" id="inputFile4" multiple="">
+            <div class="input-group">
+              <input type="text" readonly="" class="form-control" placeholder="Upload file...">
+                <span class="input-group-btn input-group-sm">
+                  <button type="button" class="btn btn-fab btn-fab-mini">
+                    <i class="material-icons">attach_file</i>
+                  </button>
+                </span>
+            </div>
+          </div>
+		  </div>
 	<div class='row' style='margin-right:25px'>
-	<a href='#' class='btn btn-raised btn-info right click-step2' onclick='return false;'>NEXT</a>
+	<a href='' class='btn btn-raised btn-info right click-step2' onclick='return false;'>NEXT</a>
 	</div>
   </li>
   <li class='container'>
   <h2 class='left'>Step 2</h2><div class='prop-status' id='prop-status2'><a href="javascript:void(0)" class="right btn btn-raised btn-success" style="display:none">Completed<span class='glyphicon glyphicon-ok'></span></a></div>
 	<hr class='clear'/>
-	<div class='row'>
-		<div class='col-md-11'>
-		<h3>Participants - Investigators, Collaborators, Supervisors *</h3>
-		<table class='participant-table part-table'>
-		<thead><tr><th>Name *</th><th>Address *</th><th>Email</th><th>Role</th><th></th></tr></thead>
-		<tbody class="input_fields_wrap">
-		<tr>
-			<td><input type='text' class='form-control' placeholder='Name' id='pname' name='pname[]' /></td>
-			<td><input type='text' class='form-control' placeholder='Address' id='paddress' name='paddress[]' /></td>
-			<td><input type='text' class='form-control' placeholder='Email' id='pemail' name='pemail[]' /></td>
-			<td><select name='prole[]' id='prole'><option>Investigator</option><option>Collaborator</option><option>Supervisor</option></select></td>
-			<td class='btn-col'><button class="add_field_button btn glyphicon glyphicon-plus" /></td>
-		</tr>
-		<tr><td><input type="text" placeholder="Name" name="pname[]"></td><td><input type="text" placeholder="Address" name="paddress[]"></td><td><input type="text" placeholder="Email" name="email[]"></td><td><select name="role[]"><option>Investigator</option><option>Collaborator</option><option>Supervisor</option></select></td><td class="btn-col"><button class="remove_field btn glyphicon glyphicon-remove"></button></td></tr>
-		<tr><td><input type="text" placeholder="Name" name="pname[]"></td><td><input type="text" placeholder="Address" name="paddress[]"></td><td><input type="text" placeholder="Email" name="email[]"></td><td><select name="role[]"><option>Investigator</option><option>Collaborator</option><option>Supervisor</option></select></td><td class="btn-col"><button class="remove_field btn glyphicon glyphicon-remove"></button></td></tr>
-		<tr><td><input type="text" placeholder="Name" name="pname[]"></td><td><input type="text" placeholder="Address" name="paddress[]"></td><td><input type="text" placeholder="Email" name="email[]"></td><td><select name="role[]"><option>Investigator</option><option>Collaborator</option><option>Supervisor</option></select></td><td class="btn-col"><button class="remove_field btn glyphicon glyphicon-remove"></button></td></tr>
-		</tbody>
-		</table>
+<div class="form-group is-empty">
+        <label for="inputEmail" class="col-md-2 control-label">Objective(s)</label>
+        <div class="col-md-10">
+            <input type="text" class="form-control" name="txt_obj" id="txt_obj">
+        </div>
+    </div>
+	<div class="form-group is-empty">
+		<label for="inputEmail" class="col-md-2 control-label">Scientific Justification</label>
+		<div class="col-md-10">
+		  <input type="text" class="form-control" name="txt_scijus" id="txt_scijus">
 		</div>
+    </div>
+	<div class="form-group is-empty">
+		<label for="inputEmail" class="col-md-2 control-label">Design/Methodology</label>
+		<div class="col-md-10">
+		  <input type="text" class="form-control" name="txt_desi" id="txt_desi">
 		</div>
-		
-		<div class='row'>
-		<div class='col-md-11'>
-		<h3>Sites of Research *</h3>
-		<table class='site-table'>
-		<thead><tr><th>Name *</th><th></th></tr></thead>
-		<tbody class="input_fields_wrap">
-		<tr>
-			<td><input type='text' class='form-control' placeholder='Name' id='sname' name='sname[]' /></td>
-			<td class='btn-col'><button id='site' class="add_field_button btn glyphicon glyphicon-plus" /></td>
-		</tr>
-		<tr><td><input type='text' placeholder='Name' name='sname[]' /></td><td class='btn-col'><button class='remove_field btn glyphicon glyphicon-remove' /></td></tr>
-		<tr><td><input type='text' placeholder='Name' name='sname[]' /></td><td class='btn-col'><button class='remove_field btn glyphicon glyphicon-remove' /></td></tr>
-		<tr><td><input type='text' placeholder='Name' name='sname[]' /></td><td class='btn-col'><button class='remove_field btn glyphicon glyphicon-remove' /></td></tr>
-		</tbody>
-		</table>
+	</div>  
+	<div class="form-group is-empty">
+		<label for="inputEmail" class="col-md-2 control-label">Statistical Considerations</label>
+		<div class="col-md-10">
+		  <input type="text" class="form-control tab-disable" name="txt_stat" id="txt_stat">
 		</div>
-		</div>  
+	</div>	  
+	
 	<div class='row' style='margin-right:25px'>
 		<a href='#' class='btn btn-raised btn-info right click-step3' onclick='return false;'>NEXT</a>
 		<a href='#' class='btn btn-raised btn-info right click-step1' onclick='return false;'>PREVIOUS</a>
@@ -174,45 +138,29 @@
   </li>
   <li class='container'>
     <h2 class='left'>Step 3</h2><div class='prop-status' id='prop-status3'><a href="javascript:void(0)" class="right btn btn-raised btn-success" style="display:none">Completed<span class='glyphicon glyphicon-ok'></span></a></div>
-	<hr class='clear' />
-	<div class='row'>
-		<div class="form-group label-floating is-empty  col-md-11">
-			<label for="txt_intro" class="control-label">Introduction</label>
-			<textarea id="txt_intro" name="txt_intro" class="form-control"></textarea>
-        </div>
-	</div>
-	<div class='row'>
-		<div class="form-group label-floating is-empty  col-md-11">
-			<label for="txt_objectives" class="control-label">Objectives</label>
-			<textarea id="txt_objectives" name="txt_objectives" class="form-control"></textarea>
-        </div>
-	</div>
-	<div class='row'>
-		<div class="form-group label-floating is-empty  col-md-11">
-			<label for="txt_justification" class="control-label">Justification</label>
-			<textarea id="txt_justification" name="txt_justification" class="form-control"></textarea>
-        </div>
-	</div>	
-	<div class='row'>
-		<div class="form-group label-floating is-empty  col-md-11">
-			<label for="txt_materials" class="control-label">Materials and Methods *</label>
-			<textarea id="txt_materials" name="txt_materials" class="form-control"></textarea>
-        </div>
-	</div>
-	<div class='row'>
-		<div class="form-group label-floating col-md-5">
-			<div class="form-group label-floating">
-				<label for="txt_participants" class="control-label">Numbers of Research Participants to be Enrolled *</label>
-				<input type="text" class="form-control" name="txt_participants" id="txt_participants">
-				<span class="help-block">Enter the Numbers of Research Participants to be Enrolled</span>
-			</div>
+  <hr class='clear' />
+	<div class="form-group is-empty">
+		<label for="inputEmail" class="col-md-2 control-label">Study Population</label>
+		<div class="col-md-10">
+		  <input type="text" class="form-control" name="txt_studypop" id="txt_studypop">
 		</div>
-		<div class="form-group label-floating col-md-5 col-md-offset-1">
-			<div class="form-group label-floating">
-				<label for="txt_duration" class="control-label">Proposed Duration of the Study</label>
-				<input type="text" class="form-control" name="txt_duration" id="txt_duration">
-				<span class="help-block">Enter the Proposed Duration of the Study</span>
-			</div>
+	</div>
+	<div class="form-group is-empty">
+		<label for="inputEmail" class="col-md-2 control-label">Research Tool/Intervention</label>
+		<div class="col-md-10">
+		  <input type="text" class="form-control" name="txt_restool" id="txt_restool">
+		</div>
+	</div>	
+	<div class="form-group is-empty">
+		<label for="inputEmail" class="col-md-2 control-label">Informed Consent</label>
+		<div class="col-md-10">
+		  <input type="text" class="form-control" name="txt_infcon" id="txt_infcon">
+		</div>
+	</div>	
+		<div class="form-group is-empty">
+		<label for="inputEmail" class="col-md-2 control-label">Data Privacy/Confidentiality</label>
+		<div class="col-md-10">
+		  <input type="text" class="form-control tab-disable"  name="txt_datapri" id="txt_datapri" class="form-control">
 		</div>
 	</div>
 	<div class='row' style='margin-right:25px'>
@@ -223,84 +171,132 @@
   <li class='container'>
 	<h2 class='left'>Step 4</h2><div class='prop-status' id='prop-status4'><a href="javascript:void(0)" class="right btn btn-raised btn-success" style="display:none">Completed<span class='glyphicon glyphicon-ok'></span></a></div>
   <hr class='clear'/>
-  <div class='row'>
-	<div class='col-md-11'>
-		<h3>Contact Person</h3>
-		<table class='participant-table'>
-			<thead><tr><th>Name</th><th>Address</th><th>Telephone</th><th>Email</th><th>Fax</th></tr></thead>
-			<tbody class="input_fields_wrap">
-			<tr>
-				<td><input type='text' placeholder='Name' name='cname' /></td>
-				<td><input type='text' placeholder='Address' name='caddress' /></td>
-				<td><input type='text' placeholder='Telephone' name='cphone' /></td>
-				<td><input type='email' placeholder='Email' name='cemail' /></td>
-				<td><input type='text' placeholder='Fax' name='cfax' /></td>
-			</tr>
-			</tbody>
-		</table>
-	</div>
-	</div>
-	<div class='row'>
-		<div class="form-group is-empty is-fileinput col-md-7">
-            <input type="file" id="fil_consent" name='fil_consent' multiple="">
-            <div class="input-group">
-              <input type="text" readonly="" class="form-control" placeholder="Upload Consent Form...">
-                <span class="input-group-btn input-group-sm">
-                  <button type="button" class="btn btn-fab btn-fab-mini">
-                    <i class="material-icons">attach_file</i>
-                  </button>
-                </span>
-            </div>
-          </div>
-	</div>
-	<div class='row'>
-		<div class="form-group is-empty">
-			<label for="textArea" class="col-md-2 control-label">Time allocated to Participants</label>
-				<div class="col-md-10">
-				  <textarea class="form-control tab-disable" rows="3"  name="txt_time_allocated" id="txt_time_allocated"></textarea>
-				</div>
+
+	<div class="form-group is-empty">
+		<label for="inputEmail" class="col-md-2 control-label">Conflict of Interest</label>
+		<div class="col-md-10">
+		  <input type="text"  name="txt_coi" id="txt_coi" class="form-control">
+		</div>
+	</div>	
+	<div class="form-group is-empty">
+		<label for="inputEmail" class="col-md-2 control-label">Publication Plan</label>
+		<div class="col-md-10">
+		  <input type="text" class="form-control"  name="txt_pplan" id="txt_pplan">
+		</div>
+    </div>	
+	<div class="form-group is-empty">
+		<label for="inputEmail" class="col-md-2 control-label">Additional Comments</label>
+		<div class="col-md-10">
+		  <input type="text" class="form-control" name="txt_addc" id="txt_addc">
+		</div>
+	</div>	
+	<div class="form-group is-empty">
+		<label for="textArea" class="col-md-2 control-label">Chair Summary</label>
+		<div class="col-md-10">
+		  <textarea class="form-control" rows="3"  name="txt_chair" id="txt_chair"></textarea>
 		</div>
 	</div>
-	<div class='row'>
-		<div class="form-group is-empty">
-			<label for="txt_conf_provisions" class="col-md-2 control-label">Confidentiality Provisions</label>
-				<div class="col-md-10">
-				  <textarea class="form-control tab-disable" rows="3"  name="txt_conf_provisions" id="txt_conf_provisions"></textarea>
-				</div>
-		</div>
-	</div>
-	<div class='row'>
-		<div class="form-group is-empty">
-			<label for="txt_data_coll" class="col-md-2 control-label">Methods for Data Collection</label>
-				<div class="col-md-10">
-				  <textarea class="form-control tab-disable" rows="3"  name="txt_data_coll" id="txt_data_coll"></textarea>
-				</div>
-		</div>
-	</div>
-	<div class='row'>
-		<div class="form-group is-empty">
-			<label for="txt_assumptions" class="col-md-2 control-label">Assumptions Made</label>
-				<div class="col-md-10">
-				  <textarea class="form-control tab-disable" rows="3"  name="txt_assumptions" id="txt_assumptions"></textarea>
-				</div>
-		</div>
-	</div>
-	<div class='row'>
-		<div class="form-group is-empty">
-			<label for="txt_references" class="col-md-2 control-label">Relevant References *</label>
-				<div class="col-md-10">
-				  <textarea class="form-control tab-disable" rows="3"  name="txt_references" id="txt_references"></textarea>
-				</div>
-		</div>
+	<div class="form-group is-empty">
+        <label for="textArea" class="col-md-2 control-label">Feedback to Investigator</label>
+			<div class="col-md-10">
+			  <textarea class="form-control tab-disable" rows="3"  name="txt_feedback" id="txt_feedback"></textarea>
+			</div>
 	</div>
 	<div class='row' style='margin-right:25px'>
-		<a href='' class="btn btn-raised btn-success right" onclick='submitMsg(); return false;' id='slide4'>SUBMIT PROPOSAL</a>
 		<a href='' class='btn btn-raised btn-default right' id='slide2'>SAVE</a>
+		<a href='' class="btn btn-raised btn-success right" onclick='submitMsg(); return false;' id='slide4'>SUBMIT PROPOSAL</a>
 	</div>
   </li>
+  <li class="container">
+  <h2 class='left'>Review</h2><div class='prop-status' id='prop-status5'><a href="javascript:void(0)" class="right btn btn-raised btn-success" style="display:none">Completed<span class='glyphicon glyphicon-ok'></span></a></div>
+  <hr class='clear'/>
   
   
-  <li style='height:750px'></li>
+  
+  
+  
+  
+  
+  
+  
+	<div class="form-group"> 
+        <div class="checkbox">
+            <label>Vulnerable Group</label><br/>
+				<div class="row">
+					<div class="form-group label-floating col-sm-4">
+						<label>
+						  <input type="checkbox" class="form-control" name="chk_vul_none" id="chk_vul_none" value="none"><span class="checkbox-material"><span class="check"></span></span> None
+						</label>					
+					</div>
+					<div class="form-group label-floating col-sm-4">
+						<label>
+						  <input type="checkbox" class="form-control" name="chk_vul_phy" id="chk_vul_phy" value="physical"><span class="checkbox-material"><span class="check"></span></span> Physical Incapacity
+						</label>					</div>
+						<div class="form-group label-floating col-sm-4">
+							<label>
+							  <input type="checkbox" class="form-control" name="chk_vul_intel" id="chk_vul_intel" value="intellectual"><span class="checkbox-material"><span class="check"></span></span> Intellectual/Mental incapacity
+							</label>                    
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group label-floating col-sm-4">
+							<label>
+							  <input type="checkbox" class="form-control" name="chk_vul_preg" id="chk_vul_preg" value="pregnant"><span class="checkbox-material"><span class="check"></span></span> Pregnant
+							</label>					
+						</div>
+						<div class="form-group label-floating col-sm-4">
+							<label>
+							  <input type="checkbox" class="form-control" id="chk_vul_child" name="chk_vul_child" value="children"><span class="checkbox-material"><span class="check"></span></span> Children
+							</label>					
+						</div>
+						<div class="form-group label-floating col-sm-4">
+							<label>
+							  <input type="checkbox" class="form-control" id="chk_vul_pris" name="chk_vul_pris" value="prisoners"><span class="checkbox-material"><span class="check"></span></span> Prisoners
+							</label>                    
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group label-floating col-sm-4">
+							<label>
+							  <input type="checkbox" class="form-control" id="chk_vul_eld" name="chk_vul_eld" value="elders"><span class="checkbox-material"><span class="check"></span></span> Elderly
+							</label>					
+						</div>
+						<div class="form-group label-floating col-sm-4">
+							<label>
+							  <input type="checkbox" class="form-control" id="chk_vul_institut" name="chk_vul_institut" value="institute"><span class="checkbox-material"><span class="check"></span></span> Institutionalised
+							</label>					
+						</div>
+						<div class="form-group label-floating col-sm-4">
+							<label>
+							  <input type="checkbox" class="form-control" id="chk_vul_lang" name="chk_vul_lang" value="language"><span class="checkbox-material"><span class="check"></span></span> Language
+							</label>                    
+						</div>
+					</div>
+					<div class="form-group label-floating">
+						<label>
+							  <input type="checkbox" class="form-control tab-disable" id="chk_vul_other" name="chk_vul_other" value="other"><span class="checkbox-material"><span class="check"></span></span> Other
+						</label>
+					</div>
+        </div>
+    </div>
+  <div class='row'>
+	<div class="form-group label-floating col-md-6">
+	<div class="form-group label-floating">
+		<label for="i5" class="control-label">Investigator</label>
+		<input type="text" class="form-control" name="txt_investigator" id="txt_investigator">
+		<span class="help-block">Enter your Investigator</span>
+		</div>
+	</div>
+	<div class="form-group label-floating col-md-6">
+	<div class="form-group label-floating">
+		<label for="i5" class="control-label">Response Due</label>
+		<input type="text" class="form-control tab-disable" name="txt_response_date" id="txt_response_date">
+		<span class="help-block">Enter your Response here</span>
+		</div>
+	</div>
+	</div>
+  </li>
+  <li></li>
 </ul>
 </div>
 <div id="bx-pager">
@@ -309,7 +305,8 @@
   <li id='pager_step2' ><a data-slide-index="1" href=""><span class='left-icon glyphicon glyphicon-chevron-left inv'></span>Step 2<span class='glyphicon glyphicon-unchecked right'></span></a></li>
   <li id='pager_step3' ><a data-slide-index="2" href=""><span class='left-icon glyphicon glyphicon-chevron-left inv'></span>Step 3<span class='glyphicon glyphicon-unchecked right'></span></a></li>
   <li id='pager_step4' ><a data-slide-index="3" href=""><span class='left-icon glyphicon glyphicon-chevron-left inv'></span>Step 4<span class='glyphicon glyphicon-unchecked right'></span></a></li> 
-  <li><button href="javascript:void(0)" class="btn btn-raised btn-default">Save</button><button href='' class="btn btn-raised btn-success right" onclick='submitMsg(); return false;'>SUBMIT PROPOSAL</button>
+  <li id='pager_step5' ><a data-slide-index="4" href="">REVIEW</a></li> 
+ <li><button href="javascript:void(0)" class="btn btn-raised btn-default">Save</button><a href='' class="btn btn-raised btn-success right" onclick='submitMsg(); return false;'>SUBMIT PROPOSAL</a>
 </li>
   </ul>
 </div>
@@ -462,7 +459,7 @@ $(".click-step4").click(function() { document.getElementById("bx-pager").getElem
 		document.getElementById('prop-status1').getElementsByTagName("a").item(0).setAttribute("style","display:none");		
 		document.getElementById("pager_step1").getElementsByClassName('glyphicon').item(1).className="glyphicon glyphicon-unchecked right";		
 	}
-	if(document.getElementById("pname").value!=""&&document.getElementById("paddress").value!=""&&document.getElementById("sname").value!="")
+	if(document.getElementById("txt_obj").value!=""&&document.getElementById("txt_scijus").value!=""&&document.getElementById("txt_desi").value!=""&&document.getElementById("txt_stat").value!="")
 		{
 		document.getElementById("pager_step2").className="complete";
 		document.getElementById('prop-status2').getElementsByTagName("a").item(0).setAttribute("style","display:inline-block");		
@@ -474,7 +471,7 @@ $(".click-step4").click(function() { document.getElementById("bx-pager").getElem
 		document.getElementById('prop-status2').getElementsByTagName("a").item(0).setAttribute("style","display:none");		
 		document.getElementById("pager_step2").getElementsByClassName('glyphicon').item(1).className="glyphicon glyphicon-unchecked right";		
 	}
-	if(document.getElementById("txt_materials").value!=""&&document.getElementById("txt_participants").value!="")
+	if(document.getElementById("txt_studypop").value!=""&&document.getElementById("txt_restool").value!=""&&document.getElementById("txt_infcon").value!=""&&document.getElementById("txt_datapri").value!="")
 		{
 		document.getElementById("pager_step3").className="complete";
 		document.getElementById('prop-status3').getElementsByTagName("a").item(0).setAttribute("style","display:inline-block");		
@@ -486,7 +483,7 @@ $(".click-step4").click(function() { document.getElementById("bx-pager").getElem
 		document.getElementById('prop-status3').getElementsByTagName("a").item(0).setAttribute("style","display:none");		
 		document.getElementById("pager_step3").getElementsByClassName('glyphicon').item(1).className="glyphicon glyphicon-unchecked right";		
 	}
-	if(document.getElementById("txt_references").value!="")
+	if(document.getElementById("txt_coi").value!=""&&document.getElementById("txt_pplan").value!=""&&document.getElementById("txt_addc").value!=""&&document.getElementById("txt_chair").value!=""&&document.getElementById("txt_feedback").value!="")
 		{
 		document.getElementById("pager_step4").className="complete";
 		document.getElementById('prop-status4').getElementsByTagName("a").item(0).setAttribute("style","display:inline-block");		
@@ -502,28 +499,7 @@ $(".click-step4").click(function() { document.getElementById("bx-pager").getElem
   $(".form-control").click(function () {formverify();});
   $(".form-control").blur(function () {formverify();});
 
-  $(document).ready(function() {
-    var max_fields      = 10; //maximum input boxes allowed
-    var wrapper         = $(".input_fields_wrap"); //Fields wrapper
-    var add_button      = $(".add_field_button"); //Add button ID
-    
-    var x = 1; //initlal text box count
-    $(add_button).click(function(e){ //on add input button click
-        e.preventDefault();
-        if(x < max_fields){ //max input box allowed
-            x++; //text box increment
-			//console.log($(this));
-			if($(this).context.id=="site")
-			$(".site-table tbody").append("<tr><td><input type='text' placeholder='Name' name='name[]' /></td><td class='btn-col'><button class='remove_field btn glyphicon glyphicon-remove' /></td></tr>");
-			else
-            $(".part-table tbody").append("<tr><td><input type='text' placeholder='Name' name='name[]' /></td><td><input type='text' placeholder='Address' name='address[]' /></td><td><input type='text' placeholder='Email' name='email[]' /></td><td><select name='role[]'><option>Investigator</option><option>Collaborator</option><option>Supervisor</option></select></td><td class='btn-col'><button class='remove_field btn glyphicon glyphicon-remove' /></td></tr>"); //add input box
-        }
-    });
-    
-    $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
-        e.preventDefault(); $(this).parent('td').parent().remove(); x--;
-    })
-});
+  
   
 function submitMsg() {
     var r = confirm("Press a button!\nEither OK or Cancel.\nThe button you pressed will be displayed in the result window.");
