@@ -255,7 +255,7 @@ p.sm {text-align:center; font-size:.8em; display:block; margin-top:15px;}
 dl {margin-top:5px}
 dd, dt {font-size:.8em; color:#808080; display:inline-block}
 dt {padding-right:5px;}
-hr.sep {border-bottom:1px solid #c4c4c4}
+hr.sep {border-bottom:1px solid #c4c4c4; margin-bottom:0}
 /*#radio-button h2 {*/
     /*font-size: 18.7199993133545px;*/
     /*font-weight: bold;*/
@@ -313,17 +313,24 @@ hr.sep {border-bottom:1px solid #c4c4c4}
 #pager_step5 a {background:#347da9; text-align:center; letter-spacing:.3em; font-weight:bold; font-size:1.3em; color:#FFF;}
 #pager_step5 a:hover {background:#4093c5}
 #pager_step5 a.active, #pager_step5 a:hover.active {color:#347da9; background:#FFF}
-.proposal-table {width:100%; margin-bottom:15px;}
-.proposal-table thead tr {background:#6DB43F}
-.proposal-table thead th {border:none; color:#FFF}
-.proposal-table td, .proposal-table th { border:1px solid #c3c3c3;padding:8px}
-.proposal-table tr:nth-child(even){background:#F2F2F2}
-.proposal-table tfoot td {text-align:right; padding:20px 0 0; border:none}
-.proposal-table tfoot td a {border:1px solid #c3c3c3; padding:10px; margin-left:10px; background:#FFF; text-decoration:none}
-.proposal-table tfoot td a:hover {background:#ecfbec}
+.proposal-table, .participant-table, .site-table {width:100%; margin-bottom:15px;}
+.proposal-table thead tr, .participant-table thead tr, .site-table thead tr {background:#6DB43F}
+.proposal-table thead th, .participant-table thead th, .site-table thead th {border:none; color:#FFF}
+.proposal-table td, .proposal-table th, .participant-table td, .participant-table th, .site-table td, .site-table th { border:1px solid #c3c3c3;padding:8px}
+.participant-table tr td, .site-table tr td {padding:0}
+.participant-table input, .site-table input {width:100%;}
+.proposal-table tr:nth-child(even), .participant-table tr:nth-child(even), .site-table tr:nth-child(even){background:#F2F2F2}
+.proposal-table tfoot td, .participant-table tfoot td, .site-table tfoot td  {text-align:right; padding:0; border:none}
+.proposal-table tfoot td a, .participant-table tfoot td a, .site-table tfoot td a {border:1px solid #c3c3c3; padding:10px; margin-left:10px; background:#FFF; text-decoration:none}
+.proposal-table tfoot td a:hover, .participant-table tfoot td a:hover, .site-table tfoot td a:hover  {background:#ecfbec}
 .search-box{margin-bottom:15px; float:right}
 .search-box input {width:250px; border:1px solid #c3c3c3; display:inline-block; padding:5px 0; text-indent:10px}
 .search-box .srch {width:inherit; border:none; position:relative; color:#FFF; background:#457E29; top:2px; padding:9px 10px 10px; display:inline-block}
+.participant-table td button, .site-table td button{padding:0 3px 0 5px; margin-left:6px; background:#6DB43F}
+.participant-table td button.remove_field, .site-table td button.remove_field{background:#bf311a}
+.btn-col {width:35px}
+.add_field_button, .remove_field {padding:0; margin:0;}
+table .form-group input.form-control, table .form-group {margin:0; padding:0}
 /*#slider .sample2 .slider {*/
     /*margin: 0 40px;*/
 /*}*/
