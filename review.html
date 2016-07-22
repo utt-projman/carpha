@@ -18,6 +18,7 @@
   <link href="//cdn.rawgit.com/FezVrasta/dropdown.js/master/jquery.dropdown.css" rel="stylesheet">
   <!-- Page style -->
   <link href="index.css" rel="stylesheet">
+  <link rel='shortcut icon' href='image/favicon.ico' />
   <!-- jQuery -->
   <script src="scripts/jquery.min.js"></script>
 </head>
@@ -63,162 +64,141 @@
         </div>
     </div>
 </div>
-<div class='row'>
 	<div class='container'> <!-- MAIN CONTAINER -->
+
+<div class='row'>
 	<ol class="breadcrumb">
 	  <li><a href='/carpha'>Home</a></li>
-	  <li class="active">Submit a Proposal</li>
+	  <li class="active">Review a Proposal</li>
 	</ol>
 	
 	
 	<link rel='stylesheet' href='scripts/bxslider/jquery.bxslider.css' />
-<div class='col-md-9'>
-<ul class="bxslider">
-  <li class='container'>
-  <h2 class='left'>Step 1</h2><div class='prop-status' id='prop-status1'><a href="javascript:void(0)" style='display:none' class="step-status right btn btn-raised btn-success">Completed<span class='glyphicon glyphicon-ok'></span></a></div>
-	<hr class='clear' />
-  <div class='row'>
-		<div class="form-group label-floating col-md-12">
-			<div class="form-group label-floating">
-				<label for="i5" class="control-label">Study Title</label>
-				<input type="text" class="form-control" name="txt_study_title" id="txt_study_title">
-				<span class="help-block">Enter your Study Title here</span>
-			</div>
+	<ul class='tabs'>
+    <li><a href='#tab1'>Proposal</a></li>
+    <li><a href='#tab2'>Review</a></li>
+  </ul>
+<div class='col-md-12' style='background:#FFF; padding:15px'>
+  <div id='tab1'>
+	<div class='row'>
+		<div class='col-md-11'>
+			<h4 style='color:#347da9; display:inline-block; border-bottom:1px solid #347da9'>Study Title</h4>
+			<h2 style='margin-top:0'>The Effects of Smoking on Trees</h2>
 		</div>
-		</div>
-		<div class="row">
-	<div class="form-group is-empty is-fileinput col-md-7">
-            <input type="file" id="inputFile4" multiple="">
-            <div class="input-group">
-              <input type="text" readonly="" class="form-control" placeholder="Upload file...">
-                <span class="input-group-btn input-group-sm">
-                  <button type="button" class="btn btn-fab btn-fab-mini">
-                    <i class="material-icons">attach_file</i>
-                  </button>
-                </span>
-            </div>
-          </div>
-		  </div>
-	<div class='row' style='margin-right:25px'>
-	<a href='' class='btn btn-raised btn-info right click-step2' onclick='return false;'>NEXT</a>
 	</div>
-  </li>
-  <li class='container'>
-  <h2 class='left'>Step 2</h2><div class='prop-status' id='prop-status2'><a href="javascript:void(0)" class="right btn btn-raised btn-success" style="display:none">Completed<span class='glyphicon glyphicon-ok'></span></a></div>
-	<hr class='clear'/>
-<div class="form-group is-empty">
-        <label for="inputEmail" class="col-md-2 control-label">Objective(s)</label>
-        <div class="col-md-10">
-            <input type="text" class="form-control" name="txt_obj" id="txt_obj">
-        </div>
-    </div>
-	<div class="form-group is-empty">
-		<label for="inputEmail" class="col-md-2 control-label">Scientific Justification</label>
-		<div class="col-md-10">
-		  <input type="text" class="form-control" name="txt_scijus" id="txt_scijus">
+	<div class='row'>
+		<div class='col-md-11'>
+			<h4 style='color:#347da9; display:inline-block; border-bottom:1px solid #347da9'>Investigator</h4>
+			<h4 style='margin-top:0'>Johnny Doe</h4>
 		</div>
-    </div>
-	<div class="form-group is-empty">
-		<label for="inputEmail" class="col-md-2 control-label">Design/Methodology</label>
-		<div class="col-md-10">
-		  <input type="text" class="form-control" name="txt_desi" id="txt_desi">
+	</div>
+	<div class='row'>
+		<div class='col-md-11'>
+			<h4 style='color:#347da9; display:inline-block; border-bottom:1px solid #347da9'>Objectives</h4>
+			<h5 style='margin-top:0'>To show the effects of smoking on the environment</h5>
 		</div>
-	</div>  
-	<div class="form-group is-empty">
-		<label for="inputEmail" class="col-md-2 control-label">Statistical Considerations</label>
-		<div class="col-md-10">
-		  <input type="text" class="form-control tab-disable" name="txt_stat" id="txt_stat">
+	</div>
+	<div class='row'>
+		<div class='col-md-11'>
+			<h4 style='color:#347da9; display:inline-block; border-bottom:1px solid #347da9'>Scientific Justification</h4>
+			<p style='margin-top:0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus nisi sit amet massa pulvinar mollis. Donec a cursus ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras sed congue augue. Pellentesque dignissim lorem in neque euismod fringilla. Praesent elementum ac dui nec euismod. Morbi venenatis justo eget elit feugiat, in sodales ex mollis. Sed at risus purus. Praesent ac condimentum justo, eget mollis odio. Duis sagittis lorem non elit scelerisque, non pharetra felis sagittis. Pellentesque quis hendrerit mi, in accumsan erat. Vestibulum consequat, metus at mollis tempus, ex odio tincidunt enim, sed porta enim nunc in massa. Nullam ornare, elit vitae semper aliquam, mi purus suscipit urna, vitae egestas felis lectus eget dui. Sed nec fringilla dui, vel consectetur ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla interdum tristique tempor.</p>
 		</div>
-	</div>	  
+	</div>
+	<div class='row'>
+		<div class='col-md-11'>
+			<h4 style='color:#347da9; display:inline-block; border-bottom:1px solid #347da9'>Design Methodology</h4>
+			<p style='margin-top:0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus nisi sit amet massa pulvinar mollis. Donec a cursus ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras sed congue augue. Pellentesque dignissim lorem in neque euismod fringilla. Praesent elementum ac dui nec euismod. Morbi venenatis justo eget elit feugiat, in sodales ex mollis. Sed at risus purus. Praesent ac condimentum justo, eget mollis odio. Duis sagittis lorem non elit scelerisque, non pharetra felis sagittis. Pellentesque quis hendrerit mi, in accumsan erat. Vestibulum consequat, metus at mollis tempus, ex odio tincidunt enim, sed porta enim nunc in massa. Nullam ornare, elit vitae semper aliquam, mi purus suscipit urna, vitae egestas felis lectus eget dui. Sed nec fringilla dui, vel consectetur ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla interdum tristique tempor.</p>
+		</div>
+	</div>
+	<div class='row'>
+		<div class='col-md-11'>
+			<h4 style='color:#347da9; display:inline-block; border-bottom:1px solid #347da9'>Statistical Considerations</h4>
+			<p style='margin-top:0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus nisi sit amet massa pulvinar mollis. Donec a cursus ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras sed congue augue. Pellentesque dignissim lorem in neque euismod fringilla. Praesent elementum ac dui nec euismod. Morbi venenatis justo eget elit feugiat, in sodales ex mollis. Sed at risus purus. Praesent ac condimentum justo, eget mollis odio. Duis sagittis lorem non elit scelerisque, non pharetra felis sagittis. Pellentesque quis hendrerit mi, in accumsan erat. Vestibulum consequat, metus at mollis tempus, ex odio tincidunt enim, sed porta enim nunc in massa. Nullam ornare, elit vitae semper aliquam, mi purus suscipit urna, vitae egestas felis lectus eget dui. Sed nec fringilla dui, vel consectetur ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla interdum tristique tempor.</p>
+		</div>
+	</div>
+	<div class='row'>
+		<div class='col-md-11'>
+			<h4 style='color:#347da9; display:inline-block; border-bottom:1px solid #347da9'>Study Population</h4>
+			<p style='margin-top:0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus nisi sit amet massa pulvinar mollis. Donec a cursus ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras sed congue augue. Pellentesque dignissim lorem in neque euismod fringilla. Praesent elementum ac dui nec euismod. Morbi venenatis justo eget elit feugiat, in sodales ex mollis. Sed at risus purus. Praesent ac condimentum justo, eget mollis odio. Duis sagittis lorem non elit scelerisque, non pharetra felis sagittis. Pellentesque quis hendrerit mi, in accumsan erat. Vestibulum consequat, metus at mollis tempus, ex odio tincidunt enim, sed porta enim nunc in massa. Nullam ornare, elit vitae semper aliquam, mi purus suscipit urna, vitae egestas felis lectus eget dui. Sed nec fringilla dui, vel consectetur ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla interdum tristique tempor.</p>
+		</div>
+	</div>
+	<div class='row'>
+		<div class='col-md-11'>
+			<h4 style='color:#347da9; display:inline-block; border-bottom:1px solid #347da9'>Research Tool/Intervention</h4>
+			<p style='margin-top:0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus nisi sit amet massa pulvinar mollis. Donec a cursus ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras sed congue augue. Pellentesque dignissim lorem in neque euismod fringilla. Praesent elementum ac dui nec euismod. Morbi venenatis justo eget elit feugiat, in sodales ex mollis. Sed at risus purus. Praesent ac condimentum justo, eget mollis odio. Duis sagittis lorem non elit scelerisque, non pharetra felis sagittis. Pellentesque quis hendrerit mi, in accumsan erat. Vestibulum consequat, metus at mollis tempus, ex odio tincidunt enim, sed porta enim nunc in massa. Nullam ornare, elit vitae semper aliquam, mi purus suscipit urna, vitae egestas felis lectus eget dui. Sed nec fringilla dui, vel consectetur ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla interdum tristique tempor.</p>
+		</div>
+	</div>
+	<div class='row'>
+		<div class='col-md-11'>
+			<h4 style='color:#347da9; display:inline-block; border-bottom:1px solid #347da9'>Informed Consent</h4>
+			<p style='margin-top:0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus nisi sit amet massa pulvinar mollis. Donec a cursus ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras sed congue augue. Pellentesque dignissim lorem in neque euismod fringilla. Praesent elementum ac dui nec euismod. Morbi venenatis justo eget elit feugiat, in sodales ex mollis. Sed at risus purus. Praesent ac condimentum justo, eget mollis odio. Duis sagittis lorem non elit scelerisque, non pharetra felis sagittis. Pellentesque quis hendrerit mi, in accumsan erat. Vestibulum consequat, metus at mollis tempus, ex odio tincidunt enim, sed porta enim nunc in massa. Nullam ornare, elit vitae semper aliquam, mi purus suscipit urna, vitae egestas felis lectus eget dui. Sed nec fringilla dui, vel consectetur ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla interdum tristique tempor.</p>
+		</div>
+	</div>
+	<div class='row'>
+		<div class='col-md-11'>
+			<h4 style='color:#347da9; display:inline-block; border-bottom:1px solid #347da9'>Data Privacy/Confidentiality</h4>
+			<p style='margin-top:0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus nisi sit amet massa pulvinar mollis. Donec a cursus ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras sed congue augue. Pellentesque dignissim lorem in neque euismod fringilla. Praesent elementum ac dui nec euismod. Morbi venenatis justo eget elit feugiat, in sodales ex mollis. Sed at risus purus. Praesent ac condimentum justo, eget mollis odio. Duis sagittis lorem non elit scelerisque, non pharetra felis sagittis. Pellentesque quis hendrerit mi, in accumsan erat. Vestibulum consequat, metus at mollis tempus, ex odio tincidunt enim, sed porta enim nunc in massa. Nullam ornare, elit vitae semper aliquam, mi purus suscipit urna, vitae egestas felis lectus eget dui. Sed nec fringilla dui, vel consectetur ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla interdum tristique tempor.</p>
+		</div>
+	</div>
+	<div class='row'>
+		<div class='col-md-11'>
+			<h4 style='color:#347da9; display:inline-block; border-bottom:1px solid #347da9'>Conflict of Interest</h4>
+			<p style='margin-top:0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus nisi sit amet massa pulvinar mollis. Donec a cursus ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras sed congue augue. Pellentesque dignissim lorem in neque euismod fringilla. Praesent elementum ac dui nec euismod. Morbi venenatis justo eget elit feugiat, in sodales ex mollis. Sed at risus purus. Praesent ac condimentum justo, eget mollis odio. Duis sagittis lorem non elit scelerisque, non pharetra felis sagittis. Pellentesque quis hendrerit mi, in accumsan erat. Vestibulum consequat, metus at mollis tempus, ex odio tincidunt enim, sed porta enim nunc in massa. Nullam ornare, elit vitae semper aliquam, mi purus suscipit urna, vitae egestas felis lectus eget dui. Sed nec fringilla dui, vel consectetur ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla interdum tristique tempor.</p>
+		</div>
+	</div>
+	<div class='row'>
+		<div class='col-md-11'>
+			<h4 style='color:#347da9; display:inline-block; border-bottom:1px solid #347da9'>Publication Plan</h4>
+			<p style='margin-top:0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus nisi sit amet massa pulvinar mollis. Donec a cursus ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras sed congue augue. Pellentesque dignissim lorem in neque euismod fringilla. Praesent elementum ac dui nec euismod. Morbi venenatis justo eget elit feugiat, in sodales ex mollis. Sed at risus purus. Praesent ac condimentum justo, eget mollis odio. Duis sagittis lorem non elit scelerisque, non pharetra felis sagittis. Pellentesque quis hendrerit mi, in accumsan erat. Vestibulum consequat, metus at mollis tempus, ex odio tincidunt enim, sed porta enim nunc in massa. Nullam ornare, elit vitae semper aliquam, mi purus suscipit urna, vitae egestas felis lectus eget dui. Sed nec fringilla dui, vel consectetur ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla interdum tristique tempor.</p>
+		</div>
+	</div>
+	<div class='row'>
+		<div class='col-md-11'>
+			<h4 style='color:#347da9; display:inline-block; border-bottom:1px solid #347da9'>Additional Comments</h4>
+			<p style='margin-top:0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus nisi sit amet massa pulvinar mollis. Donec a cursus ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras sed congue augue. Pellentesque dignissim lorem in neque euismod fringilla. Praesent elementum ac dui nec euismod. Morbi venenatis justo eget elit feugiat, in sodales ex mollis. Sed at risus purus. Praesent ac condimentum justo, eget mollis odio. Duis sagittis lorem non elit scelerisque, non pharetra felis sagittis. Pellentesque quis hendrerit mi, in accumsan erat. Vestibulum consequat, metus at mollis tempus, ex odio tincidunt enim, sed porta enim nunc in massa. Nullam ornare, elit vitae semper aliquam, mi purus suscipit urna, vitae egestas felis lectus eget dui. Sed nec fringilla dui, vel consectetur ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla interdum tristique tempor.</p>
+		</div>
+	</div>
+		
+ </div>
+ <div id='tab2'>
+    <div class='col-md-12'>
+	<form method='' action=''>
+	<div class='row'>
+		<div class="form-group label-floating col-md-6">
+			<label for="i5" class="control-label">REC Meeting Date</label>
+			<input type="text" class="form-control" name="txt_investigator" id="txt_investigator">
+			<span class="help-block">REC Meeting</span>
+		</div>
+		<div class="form-group label-floating col-md-6">
+			<label for="i5" class="control-label">Date</label>
+			<input type="text" class="form-control" name="txt_investigator" id="txt_investigator">
+			<span class="help-block">REC Meeting</span>
+		</div>
+	</div>
+	<div class='row'>
+		<div class="form-group label-floating col-md-6">
+			<label for="i5" class="control-label">Comments Due</label>
+			<input type="text" class="form-control" name="txt_investigator" id="txt_investigator">
+			<span class="help-block">Comments Due</span>
+		</div>
+		<div class="form-group label-floating col-md-6">
+			<label for="i5" class="control-label">Investigator Response Due</label>
+			<input type="text" class="form-control" name="txt_investigator" id="txt_investigator">
+			<span class="help-block">Investigator Response Due</span>
+		</div>
+	</div>
 	
-	<div class='row' style='margin-right:25px'>
-		<a href='#' class='btn btn-raised btn-info right click-step3' onclick='return false;'>NEXT</a>
-		<a href='#' class='btn btn-raised btn-info right click-step1' onclick='return false;'>PREVIOUS</a>
-	</div>
-  </li>
-  <li class='container'>
-    <h2 class='left'>Step 3</h2><div class='prop-status' id='prop-status3'><a href="javascript:void(0)" class="right btn btn-raised btn-success" style="display:none">Completed<span class='glyphicon glyphicon-ok'></span></a></div>
-  <hr class='clear' />
-	<div class="form-group is-empty">
-		<label for="inputEmail" class="col-md-2 control-label">Study Population</label>
-		<div class="col-md-10">
-		  <input type="text" class="form-control" name="txt_studypop" id="txt_studypop">
-		</div>
-	</div>
-	<div class="form-group is-empty">
-		<label for="inputEmail" class="col-md-2 control-label">Research Tool/Intervention</label>
-		<div class="col-md-10">
-		  <input type="text" class="form-control" name="txt_restool" id="txt_restool">
-		</div>
-	</div>	
-	<div class="form-group is-empty">
-		<label for="inputEmail" class="col-md-2 control-label">Informed Consent</label>
-		<div class="col-md-10">
-		  <input type="text" class="form-control" name="txt_infcon" id="txt_infcon">
-		</div>
-	</div>	
-		<div class="form-group is-empty">
-		<label for="inputEmail" class="col-md-2 control-label">Data Privacy/Confidentiality</label>
-		<div class="col-md-10">
-		  <input type="text" class="form-control tab-disable"  name="txt_datapri" id="txt_datapri" class="form-control">
-		</div>
-	</div>
-	<div class='row' style='margin-right:25px'>
-		<a href='' class='btn btn-raised btn-info right click-step4' onclick='return false;'>NEXT</a>
-		<a href='' class='btn btn-raised btn-info right click-step2' onclick='return false;'>PREVIOUS</a>
-	</div>	
-  </li>
-  <li class='container'>
-	<h2 class='left'>Step 4</h2><div class='prop-status' id='prop-status4'><a href="javascript:void(0)" class="right btn btn-raised btn-success" style="display:none">Completed<span class='glyphicon glyphicon-ok'></span></a></div>
-  <hr class='clear'/>
-
-	<div class="form-group is-empty">
-		<label for="inputEmail" class="col-md-2 control-label">Conflict of Interest</label>
-		<div class="col-md-10">
-		  <input type="text"  name="txt_coi" id="txt_coi" class="form-control">
-		</div>
-	</div>	
-	<div class="form-group is-empty">
-		<label for="inputEmail" class="col-md-2 control-label">Publication Plan</label>
-		<div class="col-md-10">
-		  <input type="text" class="form-control"  name="txt_pplan" id="txt_pplan">
-		</div>
-    </div>	
-	<div class="form-group is-empty">
-		<label for="inputEmail" class="col-md-2 control-label">Additional Comments</label>
-		<div class="col-md-10">
-		  <input type="text" class="form-control" name="txt_addc" id="txt_addc">
-		</div>
-	</div>	
-	<div class="form-group is-empty">
-		<label for="textArea" class="col-md-2 control-label">Chair Summary</label>
-		<div class="col-md-10">
-		  <textarea class="form-control" rows="3"  name="txt_chair" id="txt_chair"></textarea>
-		</div>
-	</div>
-	<div class="form-group is-empty">
-        <label for="textArea" class="col-md-2 control-label">Feedback to Investigator</label>
-			<div class="col-md-10">
-			  <textarea class="form-control tab-disable" rows="3"  name="txt_feedback" id="txt_feedback"></textarea>
-			</div>
-	</div>
-	<div class='row' style='margin-right:25px'>
-		<a href='' class='btn btn-raised btn-default right' id='slide2'>SAVE</a>
-		<a href='' class="btn btn-raised btn-success right" onclick='submitMsg(); return false;' id='slide4'>SUBMIT PROPOSAL</a>
-	</div>
-  </li>
-  <li class="container">
-  <h2 class='left'>Review</h2><div class='prop-status' id='prop-status5'><a href="javascript:void(0)" class="right btn btn-raised btn-success" style="display:none">Completed<span class='glyphicon glyphicon-ok'></span></a></div>
-  <hr class='clear'/>
-  
-  
-  
-  
-  
-  
-  
-  
-  
+	<div class="form-group label-floating is-empty">
+		<label for="t1" class="control-label">Chair Summary</label>
+		<textarea id="t1" class="form-control"></textarea>
+	 </div>
+	  <div class="form-group label-floating is-empty">
+		<label for="t1" class="control-label">Feedback to Investigator</label>
+		<textarea id="t1" class="form-control"></textarea>
+	  </div>
+	
+	
+	
 	<div class="form-group"> 
         <div class="checkbox">
             <label>Vulnerable Group</label><br/>
@@ -279,48 +259,16 @@
 					</div>
         </div>
     </div>
-  <div class='row'>
-	<div class="form-group label-floating col-md-6">
-	<div class="form-group label-floating">
-		<label for="i5" class="control-label">Investigator</label>
-		<input type="text" class="form-control" name="txt_investigator" id="txt_investigator">
-		<span class="help-block">Enter your Investigator</span>
-		</div>
+	<button href="javascript:void(0)" class="btn btn-raised btn-default">Save<div class="ripple-container"></div></button> <button href="" class="btn btn-raised btn-success left" onclick="submitMsg(); return false;">SUBMIT REVIEW</button>
+
+	</form>
 	</div>
-	<div class="form-group label-floating col-md-6">
-	<div class="form-group label-floating">
-		<label for="i5" class="control-label">Response Due</label>
-		<input type="text" class="form-control tab-disable" name="txt_response_date" id="txt_response_date">
-		<span class="help-block">Enter your Response here</span>
-		</div>
-	</div>
-	</div>
-  </li>
-  <li></li>
-</ul>
-</div>
-<div id="bx-pager">
-  <ul>
-  <li id='pager_step1'><a data-slide-index="0" href="" ><span class='left-icon glyphicon glyphicon-chevron-left inv'></span>Step 1<span class='glyphicon glyphicon-unchecked right'></span></a></li>
-  <li id='pager_step2' ><a data-slide-index="1" href=""><span class='left-icon glyphicon glyphicon-chevron-left inv'></span>Step 2<span class='glyphicon glyphicon-unchecked right'></span></a></li>
-  <li id='pager_step3' ><a data-slide-index="2" href=""><span class='left-icon glyphicon glyphicon-chevron-left inv'></span>Step 3<span class='glyphicon glyphicon-unchecked right'></span></a></li>
-  <li id='pager_step4' ><a data-slide-index="3" href=""><span class='left-icon glyphicon glyphicon-chevron-left inv'></span>Step 4<span class='glyphicon glyphicon-unchecked right'></span></a></li> 
-  <li id='pager_step5' ><a data-slide-index="4" href="">REVIEW</a></li> 
- <li><button href="javascript:void(0)" class="btn btn-raised btn-default">Save</button><a href='' class="btn btn-raised btn-success right" onclick='submitMsg(); return false;'>SUBMIT PROPOSAL</a>
-</li>
-  </ul>
-</div>
 	
-	<script src="scripts/bxslider/jquery.bxslider.js"></script>
-<script type='text/javascript'>$(document).ready(function(){
-  $('.bxslider').bxSlider({
-  pagerCustom: '#bx-pager',
-  nextSelector: '.hide',
-  prevSelector: '.hide'
-});
-});
-</script>
+	
+	
+  </div>
 		  
+	</div>
 	</div>
 	</div>
 
@@ -438,68 +386,45 @@
         e.stopPropagation();
     }
 });
-$(".click-step1").click(function() { document.getElementById("bx-pager").getElementsByTagName("li").item(0).getElementsByTagName("a").item(0).click(); });
-$(".click-step2").click(function() { document.getElementById("bx-pager").getElementsByTagName("li").item(1).getElementsByTagName("a").item(0).click(); });
-$(".click-step3").click(function() { document.getElementById("bx-pager").getElementsByTagName("li").item(2).getElementsByTagName("a").item(0).click(); });
-$(".click-step4").click(function() { document.getElementById("bx-pager").getElementsByTagName("li").item(3).getElementsByTagName("a").item(0).click(); });
 
 
 
-  function formverify()
-  {
-	if(document.getElementById("txt_study_title").value!="")
-		{
-		document.getElementById("pager_step1").className="complete";
-		document.getElementById('prop-status1').getElementsByTagName("a").item(0).setAttribute("style","display:inline-block");		
-		document.getElementById("pager_step1").getElementsByClassName('glyphicon').item(1).className="glyphicon glyphicon-check right";
-		}
-	else
-	{
-		document.getElementById("pager_step1").className="";
-		document.getElementById('prop-status1').getElementsByTagName("a").item(0).setAttribute("style","display:none");		
-		document.getElementById("pager_step1").getElementsByClassName('glyphicon').item(1).className="glyphicon glyphicon-unchecked right";		
-	}
-	if(document.getElementById("txt_obj").value!=""&&document.getElementById("txt_scijus").value!=""&&document.getElementById("txt_desi").value!=""&&document.getElementById("txt_stat").value!="")
-		{
-		document.getElementById("pager_step2").className="complete";
-		document.getElementById('prop-status2').getElementsByTagName("a").item(0).setAttribute("style","display:inline-block");		
-		document.getElementById("pager_step2").getElementsByClassName('glyphicon').item(1).className="glyphicon glyphicon-check right";
-		}
-	else
-	{
-		document.getElementById("pager_step2").className="";
-		document.getElementById('prop-status2').getElementsByTagName("a").item(0).setAttribute("style","display:none");		
-		document.getElementById("pager_step2").getElementsByClassName('glyphicon').item(1).className="glyphicon glyphicon-unchecked right";		
-	}
-	if(document.getElementById("txt_studypop").value!=""&&document.getElementById("txt_restool").value!=""&&document.getElementById("txt_infcon").value!=""&&document.getElementById("txt_datapri").value!="")
-		{
-		document.getElementById("pager_step3").className="complete";
-		document.getElementById('prop-status3').getElementsByTagName("a").item(0).setAttribute("style","display:inline-block");		
-		document.getElementById("pager_step3").getElementsByClassName('glyphicon').item(1).className="glyphicon glyphicon-check right";
-		}
-	else
-	{
-		document.getElementById("pager_step3").className="";
-		document.getElementById('prop-status3').getElementsByTagName("a").item(0).setAttribute("style","display:none");		
-		document.getElementById("pager_step3").getElementsByClassName('glyphicon').item(1).className="glyphicon glyphicon-unchecked right";		
-	}
-	if(document.getElementById("txt_coi").value!=""&&document.getElementById("txt_pplan").value!=""&&document.getElementById("txt_addc").value!=""&&document.getElementById("txt_chair").value!=""&&document.getElementById("txt_feedback").value!="")
-		{
-		document.getElementById("pager_step4").className="complete";
-		document.getElementById('prop-status4').getElementsByTagName("a").item(0).setAttribute("style","display:inline-block");		
-		document.getElementById("pager_step4").getElementsByClassName('glyphicon').item(1).className="glyphicon glyphicon-check right";
-		}
-	else
-	{
-		document.getElementById("pager_step4").className="";
-		document.getElementById('prop-status4').getElementsByTagName("a").item(0).setAttribute("style","display:none");		
-		document.getElementById("pager_step4").getElementsByClassName('glyphicon').item(1).className="glyphicon glyphicon-unchecked right";		
-	}
-  }
-  $(".form-control").click(function () {formverify();});
-  $(".form-control").blur(function () {formverify();});
 
-  
+   $('ul.tabs').each(function(){
+    // For each set of tabs, we want to keep track of
+    // which tab is active and its associated content
+    var $active, $content, $links = $(this).find('a');
+
+    // If the location.hash matches one of the links, use that as the active tab.
+    // If no match is found, use the first link as the initial active tab.
+    $active = $($links.filter('[href="'+location.hash+'"]')[0] || $links[0]);
+    $active.addClass('active');
+
+    $content = $($active[0].hash);
+
+    // Hide the remaining content
+    $links.not($active).each(function () {
+      $(this.hash).hide();
+    });
+
+    // Bind the click event handler
+    $(this).on('click', 'a', function(e){
+      // Make the old tab inactive.
+      $active.removeClass('active');
+      $content.hide();
+
+      // Update the variables with the new link and content
+      $active = $(this);
+      $content = $(this.hash);
+
+      // Make the tab active.
+      $active.addClass('active');
+      $content.show();
+
+      // Prevent the anchor's default click action
+      e.preventDefault();
+    });
+  });
   
 function submitMsg() {
     var r = confirm("Press a button!\nEither OK or Cancel.\nThe button you pressed will be displayed in the result window.");

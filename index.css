@@ -340,7 +340,10 @@ table .form-group input.form-control, table .form-group {margin:0; padding:0}
 .proposal-table tfoot td, .review-table tfoot td {text-align:right; padding:20px 0 0; border:none}
 .proposal-table tfoot td a, .review-table tfoot td a {border:1px solid #c3c3c3; padding:10px; margin-left:10px; background:#FFF; text-decoration:none}
 .proposal-table tfoot td a:hover, .review-table tfoot td a:hover {background:#ecfbec}
-
+.tabs {list-style-type:none; margin:0; padding:0}
+.tabs li a {float:left; background:#D2D2D2; color:#242424; padding:15px 25px; text-decoration:none; border-right:5px solid #D2D2D2; font-size:1.1em}
+.tabs li a:hover {background:#F1F1F1}
+.tabs li a.active {background:#FFF; border-color:#347da9}
 .overlay > tr {
     background: none !important; 
     
