@@ -344,7 +344,15 @@ table .form-group input.form-control, table .form-group {margin:0; padding:0}
 .tabs li a {float:left; background:#D2D2D2; color:#242424; padding:15px 25px; text-decoration:none; border-right:5px solid #D2D2D2; font-size:1.1em}
 .tabs li a:hover {background:#F1F1F1}
 .tabs li a.active {background:#FFF; border-color:#347da9}
-.overlay > tr {
+.right-col {background:#FFF}
+.rev-body {clear:both; background:#FFF; padding:15px}
+h2 .sm {font-size:.7em}
+.file-box, .rev-box  {margin-bottom:10px;}
+.file-box ul, .rev-box ul {list-style-type:none; padding-left:5px}
+.file-box span {display:inline-block; margin:0 10px;}
+.file-box a {display:inline-block; padding:10px 0;}
+.file-box li {display:block; background:#F9F9F9; margin-bottom:1px;}
+ .overlay > tr {
     background: none !important; 
     
 }
