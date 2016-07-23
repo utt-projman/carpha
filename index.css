@@ -352,6 +352,10 @@ h2 .sm {font-size:.7em}
 .file-box span {display:inline-block; margin:0 10px;}
 .file-box a {display:inline-block; padding:10px 0;}
 .file-box li {display:block; background:#F9F9F9; margin-bottom:1px;}
+.foot{font-size:.8em}
+#foot-btn {display:block; background:#295030; color:#b7deb2; margin-top:15px; padding:10px 0; box-shadow:2px 0 5px rgba(0,0,0,0.5); cursor:pointer; font-size:1.5em; text-align:center}
+#foot-btn:hover {color:#FFF;}
+.modal-body p{font-size:1.1em}
  .overlay > tr {
     background: none !important; 
     

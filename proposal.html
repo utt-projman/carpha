@@ -132,7 +132,7 @@
 	<hr class='clear'/>
 	<div class='row'>
 		<div class='col-md-11'>
-		<h3>Participants - Investigators, Collaborators, Supervisors *</h3>
+		<h3>Primary Investigator, Co-investigator, Researcher, Advisor *</h3>
 		<table class='participant-table part-table'>
 		<thead><tr><th>Name *</th><th>Address *</th><th>Email</th><th>Role</th><th></th></tr></thead>
 		<tbody class="input_fields_wrap">
@@ -140,12 +140,12 @@
 			<td><input type='text' class='form-control' placeholder='Name' id='pname' name='pname[]' /></td>
 			<td><input type='text' class='form-control' placeholder='Address' id='paddress' name='paddress[]' /></td>
 			<td><input type='text' class='form-control' placeholder='Email' id='pemail' name='pemail[]' /></td>
-			<td><select name='prole[]' id='prole'><option>Investigator</option><option>Collaborator</option><option>Supervisor</option></select></td>
+			<td><select name='prole[]' id='prole'><option>Primary Investigator</option><option>Co-investigator</option><option>Researcher</option><option>Advisor</option></select></td>
 			<td class='btn-col'><button class="add_field_button btn glyphicon glyphicon-plus" /></td>
 		</tr>
-		<tr><td><input type="text" placeholder="Name" name="pname[]"></td><td><input type="text" placeholder="Address" name="paddress[]"></td><td><input type="text" placeholder="Email" name="email[]"></td><td><select name="role[]"><option>Investigator</option><option>Collaborator</option><option>Supervisor</option></select></td><td class="btn-col"><button class="remove_field btn glyphicon glyphicon-remove"></button></td></tr>
-		<tr><td><input type="text" placeholder="Name" name="pname[]"></td><td><input type="text" placeholder="Address" name="paddress[]"></td><td><input type="text" placeholder="Email" name="email[]"></td><td><select name="role[]"><option>Investigator</option><option>Collaborator</option><option>Supervisor</option></select></td><td class="btn-col"><button class="remove_field btn glyphicon glyphicon-remove"></button></td></tr>
-		<tr><td><input type="text" placeholder="Name" name="pname[]"></td><td><input type="text" placeholder="Address" name="paddress[]"></td><td><input type="text" placeholder="Email" name="email[]"></td><td><select name="role[]"><option>Investigator</option><option>Collaborator</option><option>Supervisor</option></select></td><td class="btn-col"><button class="remove_field btn glyphicon glyphicon-remove"></button></td></tr>
+		<tr><td><input type="text" placeholder="Name" name="pname[]"></td><td><input type="text" placeholder="Address" name="paddress[]"></td><td><input type="text" placeholder="Email" name="email[]"></td><td><select name="role[]"><option>Primary Investigator</option><option>Co-investigator</option><option>Researcher</option><option>Advisor</option></select></td><td class="btn-col"><button class="remove_field btn glyphicon glyphicon-remove"></button></td></tr>
+		<tr><td><input type="text" placeholder="Name" name="pname[]"></td><td><input type="text" placeholder="Address" name="paddress[]"></td><td><input type="text" placeholder="Email" name="email[]"></td><td><select name="role[]"><option>Primary Investigator</option><option>Co-investigator</option><option>Researcher</option><option>Advisor</option></select></td><td class="btn-col"><button class="remove_field btn glyphicon glyphicon-remove"></button></td></tr>
+		<tr><td><input type="text" placeholder="Name" name="pname[]"></td><td><input type="text" placeholder="Address" name="paddress[]"></td><td><input type="text" placeholder="Email" name="email[]"></td><td><select name="role[]"><option>Primary Investigator</option><option>Co-investigator</option><option>Researcher</option><option>Advisor</option></select></td><td class="btn-col"><button class="remove_field btn glyphicon glyphicon-remove"></button></td></tr>
 		</tbody>
 		</table>
 		</div>
@@ -328,9 +328,11 @@
 	</div>
 	</div>
 
-<footer class='row'>
+<footer>
 	<div class='container'>
-		<div class='col-md-2'>
+		<div class='row'>
+
+		<div class='col-md-2 foot'>
 		<img src='image/utt.png' class='foot-logo' alt='UTT' />
 		Copyright &copy; 2016 by The University of Trinidad and Tobago
 		</div>
@@ -340,11 +342,39 @@
 			<li><a href='glossary.html'>GLOSSARY</a></li>
 			<li><a href='proposal.html'>SUBMIT A PROPOSAL</a></li>
 			<li><a href='contact.html'>CONTACT</a></li>
-
 		</div>
-		<div class='col-md-4'>
-		</div>
+		 </div>
+		
 	</div>
+	<div id="simple-dialog" class="modal fade" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+	  <p>This system was created by the following persons who represent the UTT MSc ICT Project Management Class 2016.</p>
+<ul>       
+	   <li>Aadarsh Mohan</li>
+<li>Akil Wiltshire</li>
+<li>Anderson Miller</li>
+<li>Andrew Young</li>
+<li>Ayshea Campbell</li>
+<li>Brendon Emerique Bradshaw</li>
+<li>Christian Suban</li>
+<li>Denice Caesar</li>
+<li>Derry Smith</li>
+<li>Holo-Smith Ayokunle</li>
+<li>Jianyuan Rong</li>
+<li>Linda Levi</li>
+<li>Maurice Stewart</li>
+<li>Melissa Jadoonanan</li>
+<li>Raymond Ho</li>
+<li>Stefan Seepaul</li>
+</ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div id='foot-btn' data-toggle="modal" data-target="#simple-dialog"><span class='glyphicon glyphicon-chevron-up'></span>&nbsp;&nbsp;About this system</div>
+</div>
 </footer>
 
 <!-- Open source code -->
@@ -517,7 +547,7 @@ $(".click-step4").click(function() { document.getElementById("bx-pager").getElem
 			if($(this).context.id=="site")
 			$(".site-table tbody").append("<tr><td><input type='text' placeholder='Name' name='name[]' /></td><td class='btn-col'><button class='remove_field btn glyphicon glyphicon-remove' /></td></tr>");
 			else
-            $(".part-table tbody").append("<tr><td><input type='text' placeholder='Name' name='name[]' /></td><td><input type='text' placeholder='Address' name='address[]' /></td><td><input type='text' placeholder='Email' name='email[]' /></td><td><select name='role[]'><option>Investigator</option><option>Collaborator</option><option>Supervisor</option></select></td><td class='btn-col'><button class='remove_field btn glyphicon glyphicon-remove' /></td></tr>"); //add input box
+            $(".part-table tbody").append("<tr><td><input type='text' placeholder='Name' name='name[]' /></td><td><input type='text' placeholder='Address' name='address[]' /></td><td><input type='text' placeholder='Email' name='email[]' /></td><td><select name='role[]'><option>Primary Investigator</option><option>Co-investigator</option><option>Researcher</option><option>Advisor</option></select></td><td class='btn-col'><button class='remove_field btn glyphicon glyphicon-remove' /></td></tr>"); //add input box
         }
     });
     
