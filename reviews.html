@@ -77,9 +77,14 @@
                 <div class="panel-body">
                     <div class="col-md-12">
                         <div class='deadline-box'>DEADLINE: <span>2016-07-07</span>
-                            <button id='btn-edit-deadline' class='glyphicon glyphicon-pencil' data-toggle="modal" data-target="#edit-deadline-dialog"></button>
-                            <button id='btn-save-deadline' class='glyphicon glyphicon-ok' data-toggle="modal" data-target="#edit-deadline-dialog"></button>
-                            <button id='btn-cancel-deadline' class='glyphicon glyphicon-remove' data-toggle="modal" data-target="#edit-deadline-dialog"></button>
+                            <button id='btn-edit-deadline' class='glyphicon glyphicon-pencil' ></button>
+                            <button id='btn-save-deadline' class='glyphicon glyphicon-ok' ></button>
+                            <button id='btn-cancel-deadline' class='glyphicon glyphicon-remove' ></button>
+                        </div>
+                        <div class='deadline-box'><span>FULL</span>
+                            <button id='btn-edit-status' class='glyphicon glyphicon-pencil' ></button>
+                            <button id='btn-save-status' class='glyphicon glyphicon-ok' ></button>
+                            <button id='btn-cancel-status' class='glyphicon glyphicon-remove' ></button>
                         </div>
                         <div class='search-box'>
                             <input type='search' placeholder='Search..' name='q' />
@@ -221,6 +226,64 @@
         var newDate = encodeURIComponent($(".deadline-box input").val());
         $(location).attr('href', 'edit_date.php?date=' + newDate)
     });
+
+    var selectedCurrentRole = null
+    var roles = ["FULL", "EXPEDITED"]
+
+    $("#btn-edit-status").click(function(e) {
+        e.preventDefault()
+  
+
+        var roleTag = $(this).parent()
+      
+        selectedCurrentRole = $(roleTag).find("span").text()
+
+        var roleMenu = "<select>"
+        for (var i = 0; i < roles.length; i++) {
+            role = roles[i]
+            if (role === selectedCurrentRole) {
+                roleMenu += "<option selected>" + role + "</option>"
+            } else {
+                roleMenu += "<option>" + role + "</option>"
+            }
+        }
+        roleMenu += "</select>"
+
+        $(roleTag).find("span").replaceWith(roleMenu);
+
+                $("#btn-edit-status").hide();
+        $("#btn-save-status").fadeIn();
+        $("#btn-cancel-status").fadeIn();
+
+    });
+
+    $("#btn-save-status").click(function(e) {
+        e.preventDefault();
+
+        var roleTag = $(this).parent()
+        
+        selectedCurrentRole = null
+
+        var newRole = encodeURIComponent($(roleTag).find("select option:selected").text());
+
+        $(location).attr('href', 'edit_status.php?newstatus=' + newRole)
+
+    });
+
+
+
+    $("#btn-cancel-status").click(function(e) {
+        e.preventDefault();
+
+        var roleTag = $(this).parent()
+  
+        $(roleTag).find("select").replaceWith("<span>"+selectedCurrentRole+"</span>")
+        selectedCurrentRole = null
+        $("#btn-save-status").hide();
+        $("#btn-cancel-status").hide();
+        $("#btn-edit-status").fadeIn();
+    });
+
 
     $(".menu li").click(function() {
         // Menu

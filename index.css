@@ -414,22 +414,23 @@ h2 .sm {font-size:.7em}
 }
 .deadline-box{
 float:left;
+margin-right: 50px;
 }
 
-.btn-save, .btn-cancel, #btn-edit-deadline, #btn-cancel-deadline, #btn-save-deadline{
+.btn-save, .btn-cancel, #btn-edit-deadline, #btn-cancel-deadline, #btn-save-deadline, .deadline-box button{
 border:none; 
 background: none;
 color: #347da9;
 display: none;
 }
-#btn-edit-deadline{
+#btn-edit-deadline, #btn-edit-status{
     display: inline;
 }
-.btn-cancel, #btn-cancel-deadline{
+.btn-cancel, #btn-cancel-deadline, #btn-cancel-status{
 color: red;
 }
 
-.btn-save, #btn-save-deadline{
+.btn-save, #btn-save-deadline, #btn-save-status{
 color: green;
 }
 
